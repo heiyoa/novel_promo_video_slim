@@ -1,0 +1,43 @@
+{
+  "steps": {
+    "fetch_promo": true,
+    "run_video": true
+  },
+  "book_selection": {
+    "list_type": "hot",
+    "book_name": "Love Hidden in Dreams",
+    "book_limit": 1,
+    "include_complete": false
+  },
+  "promo_required_fields": [
+    "synopsis",
+    "chapter_content",
+    "promo_code"
+  ],
+  "novel_text_priority": [
+    "chapter_content",
+    "synopsis"
+  ],
+  "rewrite_prompt": "",
+  "image_prompt": "A stylish woman on a rooftop, cinematic portrait, high contrast, vertical frame, premium fashion mood",
+  "image_negative_prompt": "blurry, lowres, text watermark, logo",
+  "image_prompt_mode": "manual",
+  "reference_images": [],
+  "prompt_reverse": {
+    "style_preset": "generic",
+    "target_aspect_ratio": "9:16",
+    "target_model": "jimeng-4.5",
+    "language": "zh",
+    "max_reference_images": 3,
+    "extra_instruction": ""
+  },
+  "video": {
+    "audio_volume": 0.3,
+    "font": "Arial",
+    "font_size": 15,
+    "letter_spacing": 0,
+    "line_spacing": 7,
+    "bold": true,
+    "auto_wrapping": true
+  }
+}

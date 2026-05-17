@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-02-08T16:33:45Z",
+  "system_config_path": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\config\\system_config.json",
+  "workflow_config_path": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\config\\workflow_config_fitness_track.json",
+  "books": [
+    {
+      "source_key": "6c16e7087e186f874793ab9e89ee784062cae5f0",
+      "title": "Love Hidden in Dreams",
+      "alias": "",
+      "platform": "MyFiction",
+      "tags": "甜文,出轨,重生",
+      "missing_fields": [],
+      "promo_query": "",
+      "promo": {},
+      "promo_error": ""
+    }
+  ],
+  "video_outputs": [
+    {
+      "source_key": "6c16e7087e186f874793ab9e89ee784062cae5f0",
+      "title": "Love Hidden in Dreams",
+      "result": {
+        "status": "error",
+        "error": "rewrite failed"
+      }
+    }
+  ]
+}

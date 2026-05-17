@@ -1,0 +1,40 @@
+{
+  "steps": {
+    "fetch_promo": false,
+    "run_video": true
+  },
+  "book_selection": {
+    "list_type": "hot",
+    "book_name": "Love Hidden in Dreams",
+    "book_limit": 1,
+    "include_complete": true
+  },
+  "promo_required_fields": [],
+  "novel_text_priority": [
+    "chapter_content",
+    "synopsis",
+    "plot_summary"
+  ],
+  "rewrite_prompt": "# Role: Viral Fitness Motivation Scriptwriter\n\n# Task:\nConvert the source text into a short motivational slideshow script for TikTok in English.\n\n# Constraints:\n1. Output 6 slides only.\n2. Each slide max 2 short sentences.\n3. Tone: confident, resilient, disciplined.\n4. No romance, no drama, no short-drama references.\n5. Add 1-2 highlighted words per slide using **bold**.\n6. Last slide must end with a direct call to action.\n\n# Output format:\nA markdown table with columns: Slide #, Overlay Text, Visual Scene, Duration.",
+  "image_prompt": "A confident athletic woman training in a modern gym, cinematic lighting, dynamic motion, vertical composition, motivational mood",
+  "image_negative_prompt": "text watermark, logo, extra limbs, low quality, blurry",
+  "image_prompt_mode": "manual",
+  "reference_images": [],
+  "prompt_reverse": {
+    "style_preset": "fitness",
+    "target_aspect_ratio": "9:16",
+    "target_model": "jimeng-4.5",
+    "language": "en",
+    "max_reference_images": 3,
+    "extra_instruction": "Focus on clean athletic styling and social-media ad look."
+  },
+  "video": {
+    "audio_volume": 0.3,
+    "font": "Arial",
+    "font_size": 15,
+    "letter_spacing": 0,
+    "line_spacing": 7,
+    "bold": true,
+    "auto_wrapping": true
+  }
+}

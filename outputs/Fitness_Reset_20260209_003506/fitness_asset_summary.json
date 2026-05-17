@@ -1,0 +1,13 @@
+{
+  "output_dir": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\outputs\\Fitness_Reset_20260209_003506",
+  "srt": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\outputs\\Fitness_Reset_20260209_003506\\subtitles.srt",
+  "image": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\outputs\\Love_Hidden_in_Dreams\\images\\base_image_1769195886.png",
+  "music": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\assets\\music_audio\\9_justinbieberdaily_suono originale - justinbieberdaily.mp3",
+  "draft_output": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\outputs\\Fitness_Reset_20260209_003506\\draft.json",
+  "draft_name": "Fitness Reset 20260209 003506",
+  "export": {
+    "status": "ok",
+    "export_path": "outputs\\exported_videos\\Fitness_Reset.mp4"
+  },
+  "jimeng_status": "permission denied, fallback image used"
+}

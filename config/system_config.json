@@ -1,0 +1,98 @@
+{
+  "paths": {
+    "db_path": "data/books.db",
+    "outputs_dir": "outputs",
+    "promo_outputs_dir": "outputs/promo",
+    "music_audio_dir": "assets/music_audio",
+    "draft_folder": "E:/jianying/JianyingPro Drafts",
+    "job_output_path": "outputs/job_output.json"
+  },
+  "providers": {
+    "books": {
+      "type": "sqlite",
+      "sqlite": {
+        "path": "data/books.db"
+      }
+    },
+    "music": {
+      "type": "local_random",
+      "local_random": {
+        "music_dir": "assets/music_audio",
+        "extensions": [
+          ".mp3"
+        ]
+      }
+    }
+  },
+  "edge": {
+    "edge_path": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+    "edge_user_data": "C:/Edge_Dev",
+    "edge_port": 9223
+  },
+  "promo_fetch": {
+    "base_url": "https://haiwai.yd126.com/h5/next/abroad/home",
+    "page_load_wait_sec": 2,
+    "post_click_wait_sec": 2,
+    "search_wait_sec": 3,
+    "promo_panel_wait_sec": 5,
+    "selectors": {
+      "novel_library": "text:小说内容库",
+      "search_placeholder": "请输入小说名称",
+      "search_result_xpath": "//span[contains(text(), \"{keyword}\")]",
+      "promo_button_text": "去推广赚钱",
+      "plot_label_text": "剧情简介",
+      "chapter_label_text": "第1章",
+      "promo_label_text": "推广口令",
+      "plot_copy_xpath": "xpath://*[contains(text(), \"剧情简介\")]/..//*[normalize-space(.)=\"复制\"]",
+      "chapter_copy_text": "复制章节内容",
+      "promo_input_xpath": "xpath://*[contains(text(), \"推广口令\")]/following::input[1]"
+    }
+  },
+  "llm": {
+    "api_key": "",
+    "api_endpoint": "http://127.0.0.1:8045",
+    "model": "gemini-3-flash",
+    "model_fallbacks": [
+      "gemini-3-flash",
+      "gemini-3-pro-high",
+      "gemini-3-pro-low",
+      "gemini-3-pro-image",
+      "gemini-2.5-flash",
+      "gemini-2.5-flash-lite",
+      "gemini-2.5-pro",
+      "gemini-2.5-flash-thinking",
+      "claude-sonnet-4-5",
+      "claude-sonnet-4-5-thinking",
+      "claude-opus-4-5-thinking"
+    ]
+  },
+  "doubao_vision": {
+    "api_key": "",
+    "api_key_env": "ARK_API_KEY",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "model": "doubao-seed-1-6-vision-250815",
+    "timeout_sec": 120,
+    "max_retries": 1
+  },
+  "jimeng": {
+    "session_id": "fe53bd078895f3908b4fa82ded35bbc7",
+    "model": "JIMENG_4_5",
+    "ratio": "RATIO_9_16",
+    "resolution": "RESOLUTION_2K",
+    "timeout_sec": 45,
+    "debug": false,
+    "verify_tls": false
+  },
+  "jianying": {
+    "auto_export": true,
+    "auto_launch": true,
+    "exe_path": "D:/software/JianyingPro/5.9.0.11632/JianyingPro.exe",
+    "launch_wait_sec": 15,
+    "export_dir": "outputs/exported_videos",
+    "export_resolution": "",
+    "export_framerate": "",
+    "export_timeout_sec": 1200,
+    "export_overwrite": true,
+    "draft_name_prefix": ""
+  }
+}

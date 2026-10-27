@@ -1,0 +1,90 @@
+{
+  "schema": "m5.video_technical_receipt/v1",
+  "created_at": "2026-10-27T22:44:15.779511+00:00",
+  "provider_source_ref": "https://github.com/heiyoa/Doubaonew/blob/e4c5ac02e73dc22060817f9a59234d0cd3005579/tools/kr3/run_edit.py",
+  "consumer_project_ref": "https://github.com/heiyoa/novel_promo_video_slim",
+  "consumer_contract_ref": "https://github.com/heiyoa/novel_promo_video_slim/blob/6ef0ca6/modules/video_pipeline.py",
+  "media_path": "C:\\demo\\资源仓库\\08-项目代码\\novel_promo_video_slim\\outputs\\exported_videos\\Fitness_Reset.mp4",
+  "media_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+  "checks": [
+    {
+      "id": "media_exists",
+      "pass": true
+    },
+    {
+      "id": "media_nonempty",
+      "pass": true,
+      "bytes": 19358051
+    },
+    {
+      "id": "ffprobe_video_stream",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "id": "minimum_duration",
+      "pass": true,
+      "actual": 21.408844
+    },
+    {
+      "id": "minimum_dimensions",
+      "pass": true,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "audio_policy",
+      "pass": true,
+      "requirement": "OPTIONAL",
+      "has_audio": true
+    },
+    {
+      "id": "full_video_decode",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "id": "three_frames_decodable",
+      "pass": true
+    }
+  ],
+  "attributes": {
+    "duration_s": 21.408844,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "has_audio": true,
+    "audio_streams": 1,
+    "bytes": 19358051
+  },
+  "technical_status": "PASS",
+  "professional_status": "UNKNOWN",
+  "business_status": "UNKNOWN",
+  "market_status": "UNKNOWN",
+  "source_type": "REAL_PROJECT_MEDIA",
+  "limitations": [
+    "Technical video checks do not prove story, subtitle timing, user understanding, publishing eligibility, or business value.",
+    "Consumer must independently read source receipt and choose next action."
+  ],
+  "sample_frames": [
+    {
+      "fraction": 0.15,
+      "time_s": 3.211,
+      "ok": true,
+      "sha256": "44d7cf2655d5616f815b408f898a92fb3d57f1a3e531980a49101c8f336fd06c"
+    },
+    {
+      "fraction": 0.5,
+      "time_s": 10.704,
+      "ok": true,
+      "sha256": "7cc64b5e499e737cb16f8d25342fa468568da0789ada9da17a9ae3c7b301ad58"
+    },
+    {
+      "fraction": 0.85,
+      "time_s": 18.198,
+      "ok": true,
+      "sha256": "e18fe4ff22afaa333e9bed4ba09f9e2ee180e75246d261c3858196f77e31d903"
+    }
+  ],
+  "elapsed_s": 3.016
+}

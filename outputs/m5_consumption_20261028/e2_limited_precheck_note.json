@@ -1,0 +1,22 @@
+{
+  "schema": "m5.e2_limited_precheck_note/v1",
+  "recorded_at": "2026-10-27T22:50:00+00:00",
+  "evaluator_role": "Professional Evaluator (limited scope, ZCode session under owner mandate)",
+  "media_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+  "semantic_type_frozen": "reading_time_estimated_subtitles",
+  "observations": [
+    "All 3 sample frames (3.2s / 10.7s / 18.2s) render sharp, non-blank, correctly exposed; no visible decode or compression artifacts.",
+    "Content is on-theme for the fitness reset promo: athlete mid-jump over a hurdle bar on an outdoor track, matching workflow_config_fitness_track.json's motivational fitness intent (though the config's image prompt says 'modern gym' while frames show an outdoor track scene).",
+    "English overlay subtitles are large, legible, consistent style and position; texts read 'Just one more set, one more step.' / 'Tiny reps build discipline.' / 'Save this and start your reset tonight.' — coherent motivational sequence.",
+    "All three sampled frames share the SAME underlying scene (one still image with changing text), indicating a slideshow-style composition with low visual variety across the video."
+  ],
+  "verdict_scope": "LIMITED_PRECHECK_ONLY — positive observations recorded, NOT an E2 PASS",
+  "blind_spots": [
+    "Narrative structure, pacing, hook strength and platform-native style not evaluated (only 3 frames of a 21.4s video were inspected).",
+    "Subtitle timing/reading-time adequacy across the full timeline not measured; evaluator knew the file identity (not blind).",
+    "Audio track presence confirmed by probe but content/quality of audio not reviewed (semantic type needs no speech sync, but BGM quality remains unjudged).",
+    "Single-scene still-image style may reduce engagement; no data either way — flagged, not scored."
+  ],
+  "e2_status": "UNKNOWN_PARTIAL_PRECHECK_DONE",
+  "fail_safe": "No E2 conclusion may be promoted from this note; full professional review requires the project owner's frozen rubric."
+}

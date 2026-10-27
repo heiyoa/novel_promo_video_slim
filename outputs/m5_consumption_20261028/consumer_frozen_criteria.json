@@ -1,0 +1,29 @@
+{
+  "schema": "m5.consumer_frozen_criteria/v1",
+  "frozen_at": "2026-10-27T22:44:02+00:00",
+  "frozen_before_verification": true,
+  "consumer_project_ref": "https://github.com/heiyoa/novel_promo_video_slim",
+  "consumer_local_workspace_ref": "C:/demo/资源仓库/08-项目代码/novel_promo_video_slim",
+  "basis": [
+    "consumer config/config/workflow_config.json and config/workflow_config_fitness_track.json both set target_aspect_ratio=9:16 (vertical promo videos)",
+    "consumer modules/script_to_subtitle.py generates SRT from text reading-time estimation (semantic type = reading_time_estimated_subtitles, NOT speech_synchronized_subtitles); audio track is therefore not a completion requirement",
+    "old Doubaonew 30-45s gate explicitly NOT inherited (see docs/PROFESSIONAL_SEMANTICS.md)",
+    "criteria frozen before any probe of the target media; duration/geometry thresholds are conservative pipeline-sanity values, not derived from the target file"
+  ],
+  "e1_technical_minimum": {
+    "media_exists_nonempty_readable": true,
+    "ffprobe_video_stream": true,
+    "full_video_decode": true,
+    "three_frames_decodable": true,
+    "min_duration_s": 5.0,
+    "min_width": 720,
+    "min_height": 720,
+    "vertical_format_required": "height > width (9:16 intent from consumer config)",
+    "audio_policy": "OPTIONAL",
+    "max_file_corruption_events": 0
+  },
+  "e2_professional_semantic_type_frozen": "reading_time_estimated_subtitles",
+  "e2_scope_note": "E2 limited pre-check only: frame non-blank, subject consistent with the project's stated fitness theme, no visible decode artifacts. Full narrative/subtitle-timing professional review NOT performed in this trial and stays UNKNOWN.",
+  "e3_note": "Formal Harbor consumer authorization for novel_promo_video_slim is candidate-level (#209 OPEN ○想做, no comments; #30 is the research-line project). This trial runs under the repo owner's direct session mandate; controller_readback stays PENDING.",
+  "no_post_hoc_adjustment": "If the media fails any frozen criterion, the verdict is FAIL/WAIT; thresholds are not lowered after seeing results."
+}

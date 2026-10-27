@@ -1,0 +1,17 @@
+{
+  "consumer_project_ref": "https://github.com/heiyoa/novel_promo_video_slim",
+  "consumer_actor": "heiyoa (repo owner; ZCode session 2026-10-28 M5 consumption trial executed under owner's direct task mandate)",
+  "consumer_decision_ref": "file://C:/demo/资源仓库/08-项目代码/novel_promo_video_slim/outputs/m5_consumption_20261028/project_decision.json",
+  "reviewed_media_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+  "verdict": "ACCEPT",
+  "reason": "Scoped E1 ACCEPT only. The exact-sha historical export Fitness_Reset.mp4 passed all consumer-frozen technical minimums frozen before verification (receipts/consumer_frozen_criteria.json): ffprobe-readable h264 1080x1920 vertical (matches project 9:16 config), 21.41s, 1 audio stream under OPTIONAL policy, full-stream decode clean, 3/3 sample frames decodable, SHA-256 double-verified by independent certutil call. The exporter's 'status: ok' alone previously gave no byte-level evidence; this receipt now supplies it for this artifact. NOT claimed: E2 full professional review (only a limited pre-check was performed: frames non-blank, on-theme, subtitles legible, no decode artifacts; noted single-scene still-image style), E3 formal Harbor consumption authorization (#209 remains candidate-level), E4 any user/market outcome. No publishing authorization granted.",
+  "before_frontier": "E1_UNVERIFIED_EXPORTER_STATUS_OK_ONLY: novel_promo_video_slim had no byte-level technical acceptance for exported videos; historical exports (incl. Fitness_Reset.mp4) were never verified; whether an old export is trustworthy was unknown.",
+  "after_frontier": "E1_VERIFIED_EXACT_SHA_FD5A2466: the named artifact passes frozen consumer technical minimums; the provider's verify method is validated as a working read-only acceptance probe for this project's exports; adoption as a standard export gate is a recommendation requiring formal controller readback; E2 full review / E3 formal authorization / E4 outcomes remain OPEN.",
+  "requires_professional_evaluation": true,
+  "professional_evidence_refs": [
+    "receipts/review_frames/frame_3.211.png",
+    "receipts/review_frames/frame_10.704.png",
+    "receipts/review_frames/frame_18.198.png",
+    "receipts/e2_limited_precheck_note.json"
+  ]
+}

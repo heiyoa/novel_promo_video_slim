@@ -1,0 +1,22 @@
+{
+  "schema": "m5.e2_srt_crosscheck_addendum/v1",
+  "recorded_at": "2026-10-28T07:00:00+00:00",
+  "round": 2,
+  "purpose": "Second-round cross-check of the round-1 E2 limited pre-check against the consumer project's own production-side subtitles.srt (independent in-repo source). Does not upgrade E2 to PASS.",
+  "media_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+  "srt_source_ref": "https://github.com/heiyoa/novel_promo_video_slim/blob/6ef0ca6/outputs/Fitness_Reset_20260209_003506/subtitles.srt",
+  "frame_evidence_note": "review_frames_thumbs/*.jpg are 360px-wide JPEG review thumbnails downscaled from the round-1 receipt frames with ffmpeg scale=360:-1 -q:v 5. The original 1080x1920 PNG frames (approx 2.4MB each) stay local-only (Git-size constraint); their SHA-256 values are listed below and match the round-1 receipt sample_frames fingerprints byte-for-byte.",
+  "original_frame_sha256": {
+    "frame_3.211.png": "44d7cf2655d5616f815b408f898a92fb3d57f1a3e531980a49101c8f336fd06c",
+    "frame_10.704.png": "7cc64b5e499e737cb16f8d25342fa468568da0789ada9da17a9ae3c7b301ad58",
+    "frame_18.198.png": "e18fe4ff22afaa333e9bed4ba09f9e2ee180e75246d261c3858196f77e31d903"
+  },
+  "crosscheck_results": [
+    {"frame_time_s": 3.211, "rendered_text": "Tiny reps build discipline.", "srt_cue": "00:00:02,899 --> 00:00:04,099 Tiny reps build discipline.", "within_cue_window": true},
+    {"frame_time_s": 10.704, "rendered_text": "Just one more set, one more step.", "srt_cue": "00:00:09,500 --> 00:00:13,099 Just one more set, one more step.", "within_cue_window": true},
+    {"frame_time_s": 18.198, "rendered_text": "Save this and start your reset tonight.", "srt_cue": "00:00:16,299 --> 00:00:18,399 Save this and start your reset tonight.", "within_cue_window": true}
+  ],
+  "result": "3/3 sampled frames show the subtitle text and timing expected from the project's own SRT for this exact artifact.",
+  "scope": "Sampled-timestamp text/timing consistency only. Not a full-timeline sync audit, not narrative quality review, not an E2 PASS. Full professional review still requires a project-frozen rubric.",
+  "correction_note": "The round-1 e2_limited_precheck_note.json listed the three observed texts as a set without asserting frame order; this addendum fixes the per-frame attribution using the SRT windows. Original note preserved unmodified."
+}

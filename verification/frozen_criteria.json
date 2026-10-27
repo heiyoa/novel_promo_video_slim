@@ -1,0 +1,25 @@
+{
+  "criteria_kind": "PROJECT_LEVEL_E1_MINIMUM",
+  "project": "novel_promo_video_slim",
+  "frozen_at": "2026-10-27T22:44:02+00:00",
+  "frozen_before_first_verification": true,
+  "round1_criteria_record_sha256": "62cd6ce32896b4e960b568d0c3efa93be66b6a23e8a9d7a971c9238badd6a992",
+  "basis": [
+    "config/workflow_config.json and config/workflow_config_fitness_track.json both set target_aspect_ratio=9:16 (vertical promo videos)",
+    "modules/script_to_subtitle.py generates SRT from text reading-time estimation (semantic type = reading_time_estimated_subtitles); audio track is not a completion requirement",
+    "old Doubaonew 30-45s gate explicitly NOT inherited",
+    "criteria frozen before any probe of the first target media; thresholds are conservative pipeline-sanity values, not derived from any target file"
+  ],
+  "e1_technical_minimum": {
+    "media_exists_nonempty_readable": true,
+    "ffprobe_video_stream": true,
+    "full_video_decode": true,
+    "three_frames_decodable": true,
+    "min_duration_s": 5.0,
+    "min_width": 720,
+    "min_height": 720,
+    "vertical_format_required": true,
+    "audio_policy": "OPTIONAL"
+  },
+  "no_post_hoc_adjustment": "If a media fails any frozen criterion the verdict is FAIL/WAIT; thresholds are not lowered after seeing results. Changes require a new criteria version with provenance, never in-place edits."
+}

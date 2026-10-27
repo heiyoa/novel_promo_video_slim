@@ -1,0 +1,88 @@
+{
+  "schema": "novel_promo_video_slim.export_technical_verdict/v1",
+  "tool_version": "verify_export.py 1.0",
+  "created_at": "2026-10-27T23:07:09.398720+00:00",
+  "verdict": "PASS",
+  "unknown_reason": null,
+  "media_path": "outputs\\exported_videos\\Fitness_Reset.mp4",
+  "media_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+  "criteria_ref": "C:\\Users\\shuan\\AppData\\Local\\Temp\\m5_round2_clone\\verification\\frozen_criteria.json",
+  "criteria_sha256": "335736c1c226e16358d2ba57a6f47eecebae3d6a7454410efac83fec3f178508",
+  "checks": [
+    {
+      "id": "media_nonempty",
+      "pass": true,
+      "bytes": 19358051
+    },
+    {
+      "id": "ffprobe_video_stream",
+      "pass": true
+    },
+    {
+      "id": "minimum_duration",
+      "pass": true,
+      "actual": 21.408844,
+      "required": 5.0
+    },
+    {
+      "id": "minimum_dimensions",
+      "pass": true,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "vertical_format",
+      "pass": true,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "audio_policy",
+      "pass": true,
+      "requirement": "OPTIONAL",
+      "has_audio": true
+    },
+    {
+      "id": "full_video_decode",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "id": "three_frames_decodable",
+      "pass": true
+    }
+  ],
+  "attributes": {
+    "duration_s": 21.408844,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "has_audio": true,
+    "audio_streams": 1,
+    "bytes": 19358051
+  },
+  "sample_frames": [
+    {
+      "fraction": 0.15,
+      "time_s": 3.211,
+      "ok": true,
+      "sha256": "44d7cf2655d5616f815b408f898a92fb3d57f1a3e531980a49101c8f336fd06c"
+    },
+    {
+      "fraction": 0.5,
+      "time_s": 10.704,
+      "ok": true,
+      "sha256": "7cc64b5e499e737cb16f8d25342fa468568da0789ada9da17a9ae3c7b301ad58"
+    },
+    {
+      "fraction": 0.85,
+      "time_s": 18.198,
+      "ok": true,
+      "sha256": "e18fe4ff22afaa333e9bed4ba09f9e2ee180e75246d261c3858196f77e31d903"
+    }
+  ],
+  "professional_status": "NOT_EVALUATED",
+  "business_status": "NOT_EVALUATED",
+  "publishing_authorization": "NONE",
+  "elapsed_s": 2.828
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "m5.consumer_decision_record/v1",
+  "recorded_at": "2026-10-27T23:10:12.563682+00:00",
+  "consumer_project_ref": "https://github.com/heiyoa/novel_promo_video_slim",
+  "consumer_actor": "heiyoa (repo owner; ZCode session 2026-10-28 M5 round-2 consumption executed under owner's direct task mandate)",
+  "consumer_decision_ref": "repo:outputs/m5_consumption_20261028/round2_receipts/project_decision_round2.json (committed to this repo immediately after this record is generated)",
+  "media_sha256": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc",
+  "provider_source_ref": "https://github.com/heiyoa/Doubaonew/blob/e4c5ac02e73dc22060817f9a59234d0cd3005579/tools/kr3/run_edit.py",
+  "verdict": "ACCEPT",
+  "reason": "Scoped E1 ACCEPT for the second real artifact. Love_Hidden_in_Dreams.mp4 (83,893,028 bytes, repo-hosted since 6ef0ca6, produced by this project's own pipeline per outputs/Love_Hidden_in_Dreams/) passed the SAME project-frozen E1 minimums as round 1: h264 1080x1920 vertical (matches draft.json canvas), 78.32s, 1 audio stream (OPTIONAL), full-stream decode clean, 3/3 frames decodable. Two independent implementations agree: project-local verification/verify_export.py (PASS, 5.3s) and the original m5trial tool (PASS, 5.1s). Repeatability also re-confirmed on Fitness_Reset.mp4 (same sha fd5a2466..., PASS 2.8s). Negative controls correctly FAIL garbage/truncated/zero-byte artifacts and UNKNOWN on missing input; one real defect (UNKNOWN CLI exit path KeyError) was caught by the missing-file control and fixed with a regression test in the same session. NOT claimed: E2 full professional review (limited pre-check recorded, incl. same-image-across-both-videos and dense-text observations), E3 formal Harbor consumption authorization (#209 remains PRE_FORMATION), E4 outcomes, or any publishing authorization.",
+  "before_frontier": "SECOND_REAL_MEDIA_UNCONSUMED_AND_METHOD_NOT_PROJECT_LOCAL: after round 1 exactly one artifact was verified once, by a session-local tool; repeatability, second-artifact generalization, negative controls on the real pipeline's own entry, and in-repo recoverability were all unproven.",
+  "after_frontier": "TWO_REAL_ARTIFACTS_E1_VERIFIED_METHOD_PROJECT_LOCAL: both historical repo-hosted exports PASS under the same frozen criteria; the capability now lives in-repo (verification/) as a recoverable read-only entry with tests and frozen criteria; evidence archived in-repo; adoption as a standard export gate and any E2/E3/E4 judgment still require the formal controller/owner path.",
+  "selection_changed": true,
+  "technical_status": "PASS",
+  "professional_status": "EVIDENCE_REFERENCED_NOT_INDEPENDENTLY_VERIFIED",
+  "business_outcome": "NOT_MEASURED",
+  "market_value": "NOT_MEASURED",
+  "not_cross_project_reuse_pass": true,
+  "requires_controller_readback": true,
+  "technical_receipt_sha256": "9e6bce6e9650b8fb951b776f7b32e20cb9de40394c92b7a78c51b2741af9cdf9"
+}

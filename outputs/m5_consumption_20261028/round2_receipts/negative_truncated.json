@@ -1,0 +1,29 @@
+{
+  "schema": "novel_promo_video_slim.export_technical_verdict/v1",
+  "tool_version": "verify_export.py 1.0",
+  "created_at": "2026-10-27T23:07:23.628118+00:00",
+  "verdict": "FAIL",
+  "unknown_reason": null,
+  "media_path": "C:\\Users\\shuan\\AppData\\Local\\Temp\\tmp.OB8PdLv8jg\\truncated.mp4",
+  "media_sha256": "c58a058582fd1ae77564d0e3132cc088c088fa326c452c48de137771815c9c0d",
+  "criteria_ref": "C:\\Users\\shuan\\AppData\\Local\\Temp\\m5_round2_clone\\verification\\frozen_criteria.json",
+  "criteria_sha256": "335736c1c226e16358d2ba57a6f47eecebae3d6a7454410efac83fec3f178508",
+  "checks": [
+    {
+      "id": "media_nonempty",
+      "pass": true,
+      "bytes": 300000
+    },
+    {
+      "id": "ffprobe_video_stream",
+      "pass": false,
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 000001d9860bdec0] moov atom not found\r\nC:\\Users\\shuan\\AppData\\Local\\Temp\\tmp.OB8PdLv8jg\\truncated.mp4: Invalid data found when processing input\r\n"
+    }
+  ],
+  "attributes": {},
+  "sample_frames": [],
+  "professional_status": "NOT_EVALUATED",
+  "business_status": "NOT_EVALUATED",
+  "publishing_authorization": "NONE",
+  "elapsed_s": 0.078
+}

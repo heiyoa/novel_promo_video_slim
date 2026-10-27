@@ -1,0 +1,88 @@
+{
+  "schema": "novel_promo_video_slim.export_technical_verdict/v1",
+  "tool_version": "verify_export.py 1.0",
+  "created_at": "2026-10-27T23:07:03.905571+00:00",
+  "verdict": "PASS",
+  "unknown_reason": null,
+  "media_path": "outputs\\exported_videos\\Love_Hidden_in_Dreams.mp4",
+  "media_sha256": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc",
+  "criteria_ref": "C:\\Users\\shuan\\AppData\\Local\\Temp\\m5_round2_clone\\verification\\frozen_criteria.json",
+  "criteria_sha256": "335736c1c226e16358d2ba57a6f47eecebae3d6a7454410efac83fec3f178508",
+  "checks": [
+    {
+      "id": "media_nonempty",
+      "pass": true,
+      "bytes": 83893028
+    },
+    {
+      "id": "ffprobe_video_stream",
+      "pass": true
+    },
+    {
+      "id": "minimum_duration",
+      "pass": true,
+      "actual": 78.320998,
+      "required": 5.0
+    },
+    {
+      "id": "minimum_dimensions",
+      "pass": true,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "vertical_format",
+      "pass": true,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "audio_policy",
+      "pass": true,
+      "requirement": "OPTIONAL",
+      "has_audio": true
+    },
+    {
+      "id": "full_video_decode",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "id": "three_frames_decodable",
+      "pass": true
+    }
+  ],
+  "attributes": {
+    "duration_s": 78.320998,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "has_audio": true,
+    "audio_streams": 1,
+    "bytes": 83893028
+  },
+  "sample_frames": [
+    {
+      "fraction": 0.15,
+      "time_s": 11.748,
+      "ok": true,
+      "sha256": "a9979ad20a207a578522f3ea744f86e60e1c1fa6b3c7f859949b087f045e2104"
+    },
+    {
+      "fraction": 0.5,
+      "time_s": 39.16,
+      "ok": true,
+      "sha256": "0924e5454e35aa2231123bde508298cf775fa91b84318f346d311521f62a98b7"
+    },
+    {
+      "fraction": 0.85,
+      "time_s": 66.573,
+      "ok": true,
+      "sha256": "7f841bd72e8ee9d7e1aed6144bfd1e14a2e75aa18d28b6c4d43d460397efeaca"
+    }
+  ],
+  "professional_status": "NOT_EVALUATED",
+  "business_status": "NOT_EVALUATED",
+  "publishing_authorization": "NONE",
+  "elapsed_s": 5.281
+}

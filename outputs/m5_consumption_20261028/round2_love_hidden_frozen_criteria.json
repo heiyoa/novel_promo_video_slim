@@ -1,0 +1,21 @@
+{
+  "schema": "m5.consumer_frozen_criteria/v1",
+  "recorded_at": "2026-10-28T07:10:00+00:00",
+  "frozen_before_verification": true,
+  "round": 2,
+  "consumer_project_ref": "https://github.com/heiyoa/novel_promo_video_slim",
+  "target_artifact": {
+    "name": "Love_Hidden_in_Dreams.mp4",
+    "bytes": 83893028,
+    "sha256_known_from_repo_copy": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc",
+    "provenance": [
+      "hosted as git blob b923fc5373976455f4c3eb2738a0dca1737b947e in this repo at outputs/exported_videos/ (commit 6ef0ca6, pre-dating this trial)",
+      "project production run outputs/Love_Hidden_in_Dreams/ contains draft.json (canvas_config 1080x1920, fps 30, 3 music tracks, subtitle texts), novel_input.txt, script.md, subtitles.srt, base images",
+      "local workspace copy (C:/demo/.../outputs/exported_videos/) hashed identical to repo copy"
+    ]
+  },
+  "applied_criteria": "Same project-level frozen E1 minimums as round 1 (verification/frozen_criteria.json; round-1 record sha 62cd6ce32896b4e960b568d0c3efa93be66b6a23e8a9d7a971c9238badd6a992). No per-artifact relaxation: min_duration_s 5.0, min 720x720, vertical required, audio OPTIONAL, full decode, 3 frames.",
+  "criteria_derivation_note": "draft.json canvas_config 1080x1920 confirms the 9:16 vertical intent at production time, so the consumer vertical requirement applies to this artifact without anachronism.",
+  "e2_scope": "Same as round 1: limited pre-check only (frames non-blank, theme consistency vs project's own script/srt, legibility, no decode artifacts; sampled-timestamp SRT window cross-check). No full professional review; E2 remains not-PASS.",
+  "no_post_hoc_adjustment": "A FAIL on any frozen criterion is reported as FAIL with the artifact-era context noted, never as a lowered threshold."
+}

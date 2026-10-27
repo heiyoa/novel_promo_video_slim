@@ -114,6 +114,18 @@ class ExportVerificationTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 verify_export.load_criteria(bad)
 
+    def test_cli_missing_file_exits_unknown_and_writes_receipt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            receipt = Path(tmp) / "r.json"
+            proc = subprocess.run(
+                [sys.executable, str(Path(__file__).resolve().parent / "verify_export.py"),
+                 str(Path(tmp) / "nope.mp4"), "--json-out", str(receipt)],
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            self.assertEqual(proc.returncode, 2, proc.stderr.decode("utf8", "replace"))
+            result = json.loads(receipt.read_text(encoding="utf8"))
+            self.assertEqual(result["verdict"], "UNKNOWN")
+            self.assertEqual(result["unknown_reason"], "media_not_found")
+
 
 if __name__ == "__main__":
     unittest.main()

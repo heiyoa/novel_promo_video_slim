@@ -1,0 +1,26 @@
+{
+  "schema": "m5.e2_limited_precheck_note/v1",
+  "recorded_at": "2026-10-28T07:20:00+00:00",
+  "round": 2,
+  "evaluator_role": "Professional Evaluator (limited scope, ZCode session under owner mandate)",
+  "media_name": "Love_Hidden_in_Dreams.mp4",
+  "media_sha256": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc",
+  "semantic_type_frozen": "reading_time_estimated_subtitles",
+  "srt_source_ref": "https://github.com/heiyoa/novel_promo_video_slim/blob/6ef0ca6/outputs/Love_Hidden_in_Dreams/subtitles.srt",
+  "observations": [
+    "All 3 sampled frames (11.7s / 39.2s / 66.6s) render sharp, non-blank, correctly exposed; no visible decode or compression artifacts.",
+    "3/3 rendered subtitle texts match the project's own SRT within their cue windows (11.748s -> cue 9.8-18.2s; 39.160s -> cue 38.8-44.2s; 66.573s -> cue 65.9-68.2s).",
+    "All three frames share the SAME underlying still image — and it is the SAME high-jump photograph used in Fitness_Reset.mp4. A rebirth/marriage-drama story is narrated over an unrelated athletic stock photo: image-text theme mismatch across both verified exports.",
+    "Cue 3 renders as a 5-line dense text block occupying most of the frame height; readability/engagement concern flagged, not scored.",
+    "Minor typography artifact observed: apostrophe renders as 'I' m' (stray space) in the 66.6s frame.",
+    "Long cues (8.4s window) with very long sentences; pacing density differs strongly from Fitness_Reset's short punchy cues."
+  ],
+  "verdict_scope": "LIMITED_PRECHECK_ONLY — observations recorded, NOT an E2 PASS",
+  "blind_spots": [
+    "Narrative structure, hook strength, platform-native style, audio (1 track present, content unreviewed) not evaluated.",
+    "Only 3 of ~30 cues sampled; evaluator not blind to file identity.",
+    "Whether the single-image style is a deliberate format choice or a pipeline limitation is unknown from this sample."
+  ],
+  "e2_status": "UNKNOWN_PARTIAL_PRECHECK_DONE",
+  "fail_safe": "No E2 conclusion may be promoted from this note; full professional review requires the project owner's frozen rubric."
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "novel_promo_video_slim.export_technical_verdict/v1",
+  "tool_version": "verify_export.py 1.0",
+  "created_at": "2026-10-27T23:08:11.065316+00:00",
+  "verdict": "UNKNOWN",
+  "unknown_reason": "media_not_found",
+  "media_path": "C:\\Users\\shuan\\AppData\\Local\\Temp\\tmp.X7AXjD6f9W\\never.mp4",
+  "media_sha256": null,
+  "criteria_ref": "C:\\Users\\shuan\\AppData\\Local\\Temp\\m5_round2_clone\\verification\\frozen_criteria.json",
+  "criteria_sha256": "335736c1c226e16358d2ba57a6f47eecebae3d6a7454410efac83fec3f178508",
+  "checks": [],
+  "attributes": {},
+  "sample_frames": [],
+  "elapsed_s": null,
+  "professional_status": "NOT_EVALUATED",
+  "business_status": "NOT_EVALUATED",
+  "publishing_authorization": "NONE"
+}

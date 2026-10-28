@@ -1,0 +1,45 @@
+{
+  "schema": "novel_promo.a_route_rescope/v1",
+  "recorded_at": "2026-10-29T02:00:00+00:00",
+  "context": "M5 v0.5 收口后转回原业务 Project（Harbor #297 issuecomment-6476769365：工程停止，精力还给业务）。本文件把 M5 v0.4 消费决策（REVISE）的剩余清单按当前代码事实重新划定。",
+  "rescoped_items": [
+    {
+      "item": "生图失败静默回退（fail-open）",
+      "v04_status": "REVISE 待修",
+      "current_status": "CLOSED_BY_OWN_EVOLUTION",
+      "evidence": [
+        "现行 main 与本地工作区的 video_pipeline.py:282-284 均为 fail-loud：generate_base_image 返回 None 时 return {status: error, error: 'image generation failed'}",
+        "'fallback image used' / 'permission denied' 字符串在 main 全部 5 个核心模块与本地工作区 grep 均为 0 命中——2 月 9 日 fitness run 的静默回退代码已被项目自身重构移除",
+        "jimeng_image_generator.generate_base_image 全部异常路径返回 None，无跨 run 图片复用逻辑"
+      ],
+      "action": "无需再修；此结论仅针对现行代码，历史视频（Fitness_Reset/Love_Hidden）的回退成因记录于 e2_v04_review/intent_gap_classification.json 不变"
+    },
+    {
+      "item": "排版伪影（弯撇号渲染为 \"I' m\"）",
+      "v04_status": "REVISE 待修",
+      "current_status": "ROOT_CAUSE_LOCATED_OUTSIDE_PYTHON_PIPELINE / FIX_DEFERRED_TO_NEXT_REAL_EXPORT",
+      "evidence": [
+        "SRT 源文本干净：'I’m no longer'（U+2019 无空格）",
+        "draft.json texts 全部 20 条干净：'You’re pathetic.' / 'I’m no longer a beg…' 无空格伪影",
+        "伪影仅存在于渲染后视频帧 → 引入点在剪映渲染层（pyJianYingDraft 文本布局或剪映本身），项目 Python 管线之外"
+      ],
+      "action": "候选缓解：script_to_subtitle 输出侧将 U+2019 归一化为直撇号（一行改动）；但在无 GUI 真实导出前无法验证收益，不做盲修。唤醒条件=下一次真实导出时一并验证。",
+      "blind_fix_rejected_because": "修复收益不可无 GUI 验证；盲改字幕内容有引入新回归的风险"
+    },
+    {
+      "item": "script.md 的 Visual Scene 列意图定性（多场景约束 vs 装饰）",
+      "v04_status": "待 Owner 裁决",
+      "current_status": "OWNER_RULING_PENDING（唯一必要 Owner 裁决项）",
+      "action": "由 Owner 裁定；若判定为装饰，建议从 script.md 生成模板中移除该列以停止承诺做不到的事；若判定为约束，则属产品级多图能力变更，另行走合同"
+    }
+  ],
+  "teardown_capability_need": {
+    "answer": "A 路线剩余项均不需要 C022 或其他参考视频拆解能力",
+    "doubaonew_side": "WAIT_ELIGIBLE_REAL_CONSUMER 已确认（唤醒条件见 Doubaonew #47）；CorrectionDelta 与 plan_resolution.py v1.1 保持待命，Candidate 不得当可执行指令"
+  },
+  "sources": [
+    "M5 v0.4 消费决策（REVISE scoped）：outputs/m5_consumption_20261028/e2_v04_review/consumer_decision_love_hidden.json",
+    "Harbor #297 终验（工程停止）：issuecomment-6476769365",
+    "本轮验证为本机代码检索与字节检查，方法可复现"
+  ]
+}

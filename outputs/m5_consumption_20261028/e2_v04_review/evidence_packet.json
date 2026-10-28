@@ -1,0 +1,871 @@
+{
+  "schema": "m5.e2_evidence_packet/v1",
+  "generated_at": "2026-10-28T00:04:55.703658+00:00",
+  "github_main_blobs_expected": {
+    "Love_Hidden_in_Dreams/script.md": "9ed0119f1faad6b2de10a362d6777520771ef235",
+    "Love_Hidden_in_Dreams/draft.json": "3c078b8b9cbca17384561aa8a976243a649ba90e",
+    "Love_Hidden_in_Dreams/subtitles.srt": "2985a37f2e0059648a749bcc8842223261c6cdc5"
+  },
+  "artifacts": {
+    "love_hidden": {
+      "video": {
+        "path": "exported_videos/Love_Hidden_in_Dreams.mp4",
+        "sha256": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc",
+        "git_blob_normalized": "f281bfd855a202a40578515309b299e7d4dee317",
+        "bytes": 83893028
+      },
+      "script_md": {
+        "path": "Love_Hidden_in_Dreams/script.md",
+        "sha256": "75471251340fc4a3f2e3dbb255bee405463a39e0987b0d22d8419b9bcc1dcc1c",
+        "git_blob_normalized": "9ed0119f1faad6b2de10a362d6777520771ef235",
+        "bytes": 2916,
+        "matches_github_main_blob": true
+      },
+      "srt": {
+        "path": "Love_Hidden_in_Dreams/subtitles.srt",
+        "sha256": "5f67ae52a0dbe24302eda662f55ed1d7562504fba4adac2487560b261b05b337",
+        "git_blob_normalized": "2985a37f2e0059648a749bcc8842223261c6cdc5",
+        "bytes": 1970,
+        "matches_github_main_blob": true
+      },
+      "draft_json": {
+        "path": "Love_Hidden_in_Dreams/draft.json",
+        "sha256": "d51d5fde848930f6cf727d87726f36795e284eb900ca4a71712ef2799516bd67",
+        "git_blob_normalized": "3c078b8b9cbca17384561aa8a976243a649ba90e",
+        "bytes": 75076,
+        "matches_github_main_blob": true
+      },
+      "script_json": {
+        "path": "Love_Hidden_in_Dreams/script.json",
+        "sha256": "fd7105982bbff041e5f824263b6ef40c5ba5b85e6dedee397b543e23ae5bc169",
+        "git_blob_normalized": "c4453817a7371970a201b7c1d93fa513842de890",
+        "bytes": 128
+      },
+      "probe": {
+        "duration_s": 78.320998,
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_streams": 1,
+        "audio_codec": "aac",
+        "video_sha256": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc"
+      },
+      "evidence": {
+        "srt_stats": {
+          "cue_count": 20,
+          "max_chars": 138,
+          "max_duration_s": 8.4,
+          "max_chars_per_sec": 21.43,
+          "cues": [
+            {
+              "index": 1,
+              "start_s": 0.0,
+              "end_s": 4.2,
+              "duration_s": 4.2,
+              "chars": 65,
+              "chars_per_sec": 15.48,
+              "text": "While I was dying in the delivery room, my husband was on a date."
+            },
+            {
+              "index": 2,
+              "start_s": 4.2,
+              "end_s": 9.8,
+              "duration_s": 5.6,
+              "chars": 78,
+              "chars_per_sec": 13.93,
+              "text": "He told the nurse, \"I only want Irene to bear my children, not a dog like her."
+            },
+            {
+              "index": 3,
+              "start_s": 9.8,
+              "end_s": 18.2,
+              "duration_s": 8.4,
+              "chars": 130,
+              "chars_per_sec": 15.48,
+              "text": "I died, but then I woke up. It was the day of our engagement. My ex sneered, \"Are you so desperate for me that you’re stalking us?"
+            },
+            {
+              "index": 4,
+              "start_s": 18.2,
+              "end_s": 20.7,
+              "duration_s": 2.5,
+              "chars": 16,
+              "chars_per_sec": 6.4,
+              "text": "You’re pathetic."
+            },
+            {
+              "index": 5,
+              "start_s": 20.7,
+              "end_s": 22.8,
+              "duration_s": 2.1,
+              "chars": 45,
+              "chars_per_sec": 21.43,
+              "text": "His mistress Irene giggled, \"Give up, Serena."
+            },
+            {
+              "index": 6,
+              "start_s": 22.8,
+              "end_s": 24.3,
+              "duration_s": 1.5,
+              "chars": 26,
+              "chars_per_sec": 17.33,
+              "text": "Xavier will only marry me."
+            },
+            {
+              "index": 7,
+              "start_s": 24.3,
+              "end_s": 27.8,
+              "duration_s": 3.5,
+              "chars": 53,
+              "chars_per_sec": 15.14,
+              "text": "You’re just a supporting character in our love story."
+            },
+            {
+              "index": 8,
+              "start_s": 27.8,
+              "end_s": 29.9,
+              "duration_s": 2.1,
+              "chars": 41,
+              "chars_per_sec": 19.52,
+              "text": "They had no idea I remembered everything."
+            },
+            {
+              "index": 9,
+              "start_s": 29.9,
+              "end_s": 33.5,
+              "duration_s": 3.6,
+              "chars": 65,
+              "chars_per_sec": 18.06,
+              "text": "The cold hospital, my dead baby, and my parents’ fatal car crash."
+            },
+            {
+              "index": 10,
+              "start_s": 33.5,
+              "end_s": 38.8,
+              "duration_s": 5.3,
+              "chars": 53,
+              "chars_per_sec": 10.0,
+              "text": "I loved him with my whole heart, and he destroyed me."
+            },
+            {
+              "index": 11,
+              "start_s": 38.8,
+              "end_s": 44.2,
+              "duration_s": 5.4,
+              "chars": 100,
+              "chars_per_sec": 18.52,
+              "text": "But I also remembered the secret: After I died, Xavier's terrifying uncle Timothy took his own life."
+            },
+            {
+              "index": 12,
+              "start_s": 44.2,
+              "end_s": 46.3,
+              "duration_s": 2.1,
+              "chars": 33,
+              "chars_per_sec": 15.71,
+              "text": "He had thousands of photos of me."
+            },
+            {
+              "index": 13,
+              "start_s": 46.3,
+              "end_s": 49.2,
+              "duration_s": 2.9,
+              "chars": 37,
+              "chars_per_sec": 12.76,
+              "text": "He had loved me in silence for years."
+            },
+            {
+              "index": 14,
+              "start_s": 49.2,
+              "end_s": 53.7,
+              "duration_s": 4.5,
+              "chars": 72,
+              "chars_per_sec": 16.0,
+              "text": "When my parents asked who I wanted to marry, I didn't choose the nephew."
+            },
+            {
+              "index": 15,
+              "start_s": 53.7,
+              "end_s": 58.4,
+              "duration_s": 4.7,
+              "chars": 69,
+              "chars_per_sec": 14.68,
+              "text": "I looked them in the eye and said: \"I want to marry Timothy Sherwood."
+            },
+            {
+              "index": 16,
+              "start_s": 58.4,
+              "end_s": 65.9,
+              "duration_s": 7.5,
+              "chars": 138,
+              "chars_per_sec": 18.4,
+              "text": "Xavier used to scream at me for spending a penny. Now, Timothy sent me an unlimited black card. \"Spend it all, darling,\" his message read."
+            },
+            {
+              "index": 17,
+              "start_s": 65.9,
+              "end_s": 68.2,
+              "duration_s": 2.3,
+              "chars": 23,
+              "chars_per_sec": 10.0,
+              "text": "I’m no longer a beggar."
+            },
+            {
+              "index": 18,
+              "start_s": 68.2,
+              "end_s": 71.2,
+              "duration_s": 3.0,
+              "chars": 59,
+              "chars_per_sec": 19.67,
+              "text": "Irene cornered me, screaming that I was stalking \"her\" man."
+            },
+            {
+              "index": 19,
+              "start_s": 71.2,
+              "end_s": 73.0,
+              "duration_s": 1.8,
+              "chars": 35,
+              "chars_per_sec": 19.44,
+              "text": "I laughed and whispered: \"Keep him."
+            },
+            {
+              "index": 20,
+              "start_s": 73.0,
+              "end_s": 78.299,
+              "duration_s": 5.299,
+              "chars": 51,
+              "chars_per_sec": 9.62,
+              "text": "I’m busy buying a dress to become your future Aunt."
+            }
+          ]
+        },
+        "intent_gap": {
+          "script_slide_count": 8,
+          "slides": [
+            {
+              "slide": "1",
+              "overlay_text": "While I was **dying** in the delivery room, my husband was on a date. He told the nurse, \"I only want Irene to bear my children, not a **dog** like her.\" 💔🥀",
+              "visual_scene": "A woman in a hospital gown, crying and holding her stomach, while a blurred image of a man and woman laughing is in the background.",
+              "planned_duration_s": "6s"
+            },
+            {
+              "slide": "2",
+              "overlay_text": "I died, but then I woke up. It was the day of our engagement. My ex sneered, \"Are you so **desperate** for me that you’re stalking us? You’re **pathetic**.\" 🙄👟",
+              "visual_scene": "A high-end restaurant. A handsome but arrogant man looking down at the protagonist with a smug woman on his arm.",
+              "planned_duration_s": "5s"
+            },
+            {
+              "slide": "3",
+              "overlay_text": "His mistress Irene giggled, \"Give up, Serena. Xavier will only marry **me**. You’re just a supporting character in our **love** story.\" 🐍✨",
+              "visual_scene": "Close-up of a \"mean girl\" archetype smirking, holding the man's arm tightly.",
+              "planned_duration_s": "5s"
+            },
+            {
+              "slide": "4",
+              "overlay_text": "They had no idea I remembered everything. The cold hospital, my dead baby, and my parents’ **fatal** car crash. I loved him with my whole heart, and he **destroyed** me. 🕊️🔥",
+              "visual_scene": "A montage: A rainy funeral, a crashed car, and a silhouette of a woman falling into darkness.",
+              "planned_duration_s": "6s"
+            },
+            {
+              "slide": "5",
+              "overlay_text": "But I also remembered the secret: After I died, Xavier's terrifying **uncle** Timothy took his own life. He had thousands of photos of me. He had **loved** me in silence for years. 📸🖤",
+              "visual_scene": "A dark, luxurious study. A wall covered in candid photos of the same woman. A tall, mysterious man standing in the shadows.",
+              "planned_duration_s": "6s"
+            },
+            {
+              "slide": "6",
+              "overlay_text": "When my parents asked who I wanted to marry, I didn't choose the nephew. I looked them in the eye and said: \"I want to marry **Timothy** Sherwood.\" 💍🔥",
+              "visual_scene": "Protagonist looking determined and fierce, standing tall in front of her shocked parents.",
+              "planned_duration_s": "5s"
+            },
+            {
+              "slide": "7",
+              "overlay_text": "Xavier used to scream at me for spending a penny. Now, Timothy sent me an **unlimited** black card. \"Spend it all, darling,\" his message read. I’m no longer a **beggar**. 💳💎",
+              "visual_scene": "A close-up of a hand holding a sleek black credit card. Luxury shopping bags in the background.",
+              "planned_duration_s": "5s"
+            },
+            {
+              "slide": "8",
+              "overlay_text": "Irene cornered me, screaming that I was stalking \"her\" man. I laughed and whispered: \"Keep him. I’m busy buying a dress to become your future **Aunt**.\" 👰‍♀️🔪",
+              "visual_scene": "The protagonist leaning into the villain's ear, a cold smile on her face while the villain looks horrified.",
+              "planned_duration_s": "7s"
+            }
+          ],
+          "draft_video_material_count": 1,
+          "slide_cue_mapping": [
+            {
+              "cue": 1,
+              "slide": "1"
+            },
+            {
+              "cue": 2,
+              "slide": "1"
+            },
+            {
+              "cue": 3,
+              "slide": "2"
+            },
+            {
+              "cue": 4,
+              "slide": "2"
+            },
+            {
+              "cue": 5,
+              "slide": "3"
+            },
+            {
+              "cue": 6,
+              "slide": "3"
+            },
+            {
+              "cue": 7,
+              "slide": "3"
+            },
+            {
+              "cue": 8,
+              "slide": "4"
+            },
+            {
+              "cue": 9,
+              "slide": "4"
+            },
+            {
+              "cue": 10,
+              "slide": "4"
+            },
+            {
+              "cue": 11,
+              "slide": "5"
+            },
+            {
+              "cue": 12,
+              "slide": "5"
+            },
+            {
+              "cue": 13,
+              "slide": "5"
+            },
+            {
+              "cue": 14,
+              "slide": "6"
+            },
+            {
+              "cue": 15,
+              "slide": "6"
+            },
+            {
+              "cue": 16,
+              "slide": "7"
+            },
+            {
+              "cue": 17,
+              "slide": "7"
+            },
+            {
+              "cue": 18,
+              "slide": "8"
+            },
+            {
+              "cue": 19,
+              "slide": "8"
+            },
+            {
+              "cue": 20,
+              "slide": "8"
+            }
+          ],
+          "planned_total_duration_s": 45.0,
+          "actual_duration_s": 78.320998
+        },
+        "draft_facts": {
+          "canvas": [
+            1080,
+            1920
+          ],
+          "duration_s": 78.299,
+          "video_materials": [
+            {
+              "name": "base_image_1769195886.png",
+              "path_last2": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\outputs\\Love_Hidden_in_Dreams\\images\\base_image_1769195886.png",
+              "type": "photo",
+              "w": 1440,
+              "h": 2560
+            }
+          ],
+          "audio_materials": [
+            {
+              "name": "8_ріжочек.ua!!_оригінальний звук.mp3"
+            },
+            {
+              "name": "8_ріжочек.ua!!_оригінальний звук.mp3"
+            },
+            {
+              "name": "8_ріжочек.ua!!_оригінальний звук.mp3"
+            }
+          ],
+          "text_materials": 20,
+          "transitions": 0,
+          "effects": 0,
+          "track_segments": {
+            "video": 1,
+            "audio": 3,
+            "text": 20
+          }
+        },
+        "scene_changes_detected": [],
+        "scene_change_note": "visual transitions detected at listed times; empty list means no cut above 0.2 threshold — consistent with a static-photo draft",
+        "audio_tech_facts": {
+          "mean_volume_db": -28.1,
+          "max_volume_db": -14.3,
+          "silence_segments_over_2s_at_-35dB": 0,
+          "note": "Technical signal facts only. Audio CONTENT (music genre, lyrics, sync feel) is UNKNOWN: this review cannot listen."
+        },
+        "storyboard": [
+          {
+            "cue": 1,
+            "midpoint_s": 2.1,
+            "file": "cue01_t2.10.jpg",
+            "sha256": "c3de632a3b53c99d4663af57ec367ba912a891580432c563d844cd9c34a10e76"
+          },
+          {
+            "cue": 2,
+            "midpoint_s": 7.0,
+            "file": "cue02_t7.00.jpg",
+            "sha256": "4c4f4b47c7d2ecf43c1ff32c4ffa22f21fbaa3c1a8130e63aadcc65bca02157c"
+          },
+          {
+            "cue": 3,
+            "midpoint_s": 14.0,
+            "file": "cue03_t14.00.jpg",
+            "sha256": "b714f69700d7e6fe2a700e23a44253c3af78e770128f118b1993ee8f2e69310a"
+          },
+          {
+            "cue": 4,
+            "midpoint_s": 19.45,
+            "file": "cue04_t19.45.jpg",
+            "sha256": "77d53ffff1f6df56f038830109574761b3645a6993dfb49828e5942262a25f6f"
+          },
+          {
+            "cue": 5,
+            "midpoint_s": 21.75,
+            "file": "cue05_t21.75.jpg",
+            "sha256": "6ce988e6f0a8829e0f25ba0b2b3e94d8526d8c7a0f7c97e662f6595064ca9cb3"
+          },
+          {
+            "cue": 6,
+            "midpoint_s": 23.55,
+            "file": "cue06_t23.55.jpg",
+            "sha256": "2ae5a868acd30bf618e74409e557b80e1c7b45190a7ffcb0ce7e34c48cb2a3e1"
+          },
+          {
+            "cue": 7,
+            "midpoint_s": 26.05,
+            "file": "cue07_t26.05.jpg",
+            "sha256": "5601a143af2d849def26fcee034d3f47c1b5117c5f99f9e75d89450310e5879a"
+          },
+          {
+            "cue": 8,
+            "midpoint_s": 28.85,
+            "file": "cue08_t28.85.jpg",
+            "sha256": "113b38217aa16ceb042dbae40e32256215987ee6779804868eaf1d58d342b036"
+          },
+          {
+            "cue": 9,
+            "midpoint_s": 31.7,
+            "file": "cue09_t31.70.jpg",
+            "sha256": "cd4c238c3850c8a29e19634f0a0c18920eb3f4bacd90082631a67f29f2303409"
+          },
+          {
+            "cue": 10,
+            "midpoint_s": 36.15,
+            "file": "cue10_t36.15.jpg",
+            "sha256": "4918d8d195ccd860a159b7c7ba8aa97140f5dc0281771f8df805027930676f2d"
+          },
+          {
+            "cue": 11,
+            "midpoint_s": 41.5,
+            "file": "cue11_t41.50.jpg",
+            "sha256": "b0362f3b50e57cfcadcfb3966fcc755b48c14b1285218719fe4b2999518e0979"
+          },
+          {
+            "cue": 12,
+            "midpoint_s": 45.25,
+            "file": "cue12_t45.25.jpg",
+            "sha256": "ff5a4e005ceb436e2b5f4b07e031d2e01ba7b86283e226dee3595a3cf055b88b"
+          },
+          {
+            "cue": 13,
+            "midpoint_s": 47.75,
+            "file": "cue13_t47.75.jpg",
+            "sha256": "b38c9b3d25c0c2f5c58c1a4f6cac712a18645c0d68308888eba413aae62ffb55"
+          },
+          {
+            "cue": 14,
+            "midpoint_s": 51.45,
+            "file": "cue14_t51.45.jpg",
+            "sha256": "ff6611b3253c38824d54e1d0e3e3138f88ffd1e44a29eb3cf1b846ca9982e936"
+          },
+          {
+            "cue": 15,
+            "midpoint_s": 56.05,
+            "file": "cue15_t56.05.jpg",
+            "sha256": "96e6d5141b72829fd67a3b13e30aba4a8afdfcf1df2e673cf8e3265f813c37f2"
+          },
+          {
+            "cue": 16,
+            "midpoint_s": 62.15,
+            "file": "cue16_t62.15.jpg",
+            "sha256": "7009167e42ac63a268b93343bc6c436540c82ff7311b990ee7365b59473f8fc3"
+          },
+          {
+            "cue": 17,
+            "midpoint_s": 67.05,
+            "file": "cue17_t67.05.jpg",
+            "sha256": "dbb21d3e413416a52cb5a4385b867d4c03837b326db2c637fc93a7a4650428a3"
+          },
+          {
+            "cue": 18,
+            "midpoint_s": 69.7,
+            "file": "cue18_t69.70.jpg",
+            "sha256": "df808882172da645fa58dad0b0aa3d538074b20468ac7bc5b7f57a0b617ef8ee"
+          },
+          {
+            "cue": 19,
+            "midpoint_s": 72.1,
+            "file": "cue19_t72.10.jpg",
+            "sha256": "708dbd3959d31278ca2ebc491ccbee716d1cd4959d85012d0e13ee188899546e"
+          },
+          {
+            "cue": 20,
+            "midpoint_s": 75.65,
+            "file": "cue20_t75.65.jpg",
+            "sha256": "6ead172161982b875adccf0f2600b7a2bdb85c91f0ed30b165d52b633ec3f4bf"
+          }
+        ]
+      }
+    },
+    "fitness_reset": {
+      "video": {
+        "path": "exported_videos/Fitness_Reset.mp4",
+        "sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+        "git_blob_normalized": "4279df64c5f7643ccd7acf98a53aad6a0b9c0523",
+        "bytes": 19358051
+      },
+      "script_md": {
+        "path": "Fitness_Reset_20260209_003506/script.md",
+        "sha256": "ec191f7c42163f39f173dafb09ffa1a91dbe0dc58a74243e318953b4ee86a10d",
+        "git_blob_normalized": "037e4ed984a3188fff7e9a8416b9ca2d58b9d4bd",
+        "bytes": 806
+      },
+      "srt": {
+        "path": "Fitness_Reset_20260209_003506/subtitles.srt",
+        "sha256": "c58fa2892c1b945a5c4d7f2a676cf4017828fe644409c32a3ff335277d782daa",
+        "git_blob_normalized": "e742879f6ccb06a35d9d8fac83f95b0ce5afc137",
+        "bytes": 666
+      },
+      "draft_json": {
+        "path": "Fitness_Reset_20260209_003506/draft.json",
+        "sha256": "ea6502fab936295d594ecdfd8739e3faf1111fcfe7d809b2aca62facb030b811",
+        "git_blob_normalized": "3aa5f3a650b3196c858cfcde4547c32426a7d1c2",
+        "bytes": 42550
+      },
+      "probe": {
+        "duration_s": 21.408844,
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_streams": 1,
+        "audio_codec": "aac",
+        "video_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0"
+      },
+      "evidence": {
+        "srt_stats": {
+          "cue_count": 10,
+          "max_chars": 49,
+          "max_duration_s": 3.901,
+          "max_chars_per_sec": 22.5,
+          "cues": [
+            {
+              "index": 1,
+              "start_s": 0.0,
+              "end_s": 1.199,
+              "duration_s": 1.199,
+              "chars": 19,
+              "chars_per_sec": 15.85,
+              "text": "You are not behind."
+            },
+            {
+              "index": 2,
+              "start_s": 1.199,
+              "end_s": 2.899,
+              "duration_s": 1.7,
+              "chars": 20,
+              "chars_per_sec": 11.76,
+              "text": "You are in training."
+            },
+            {
+              "index": 3,
+              "start_s": 2.899,
+              "end_s": 4.099,
+              "duration_s": 1.2,
+              "chars": 27,
+              "chars_per_sec": 22.5,
+              "text": "Tiny reps build discipline."
+            },
+            {
+              "index": 4,
+              "start_s": 4.099,
+              "end_s": 5.599,
+              "duration_s": 1.5,
+              "chars": 26,
+              "chars_per_sec": 17.33,
+              "text": "Discipline builds freedom."
+            },
+            {
+              "index": 5,
+              "start_s": 5.599,
+              "end_s": 9.5,
+              "duration_s": 3.901,
+              "chars": 49,
+              "chars_per_sec": 12.56,
+              "text": "When excuses get loud, your standards get louder."
+            },
+            {
+              "index": 6,
+              "start_s": 9.5,
+              "end_s": 10.5,
+              "duration_s": 1.0,
+              "chars": 15,
+              "chars_per_sec": 15.0,
+              "text": "No perfect day."
+            },
+            {
+              "index": 7,
+              "start_s": 10.5,
+              "end_s": 13.099,
+              "duration_s": 2.599,
+              "chars": 33,
+              "chars_per_sec": 12.7,
+              "text": "Just one more set, one more step."
+            },
+            {
+              "index": 8,
+              "start_s": 13.099,
+              "end_s": 16.299,
+              "duration_s": 3.2,
+              "chars": 46,
+              "chars_per_sec": 14.38,
+              "text": "Your future body listens to what you do today."
+            },
+            {
+              "index": 9,
+              "start_s": 16.299,
+              "end_s": 18.399,
+              "duration_s": 2.1,
+              "chars": 39,
+              "chars_per_sec": 18.57,
+              "text": "Save this and start your reset tonight."
+            },
+            {
+              "index": 10,
+              "start_s": 18.399,
+              "end_s": 21.399,
+              "duration_s": 3.0,
+              "chars": 13,
+              "chars_per_sec": 4.33,
+              "text": "No zero days."
+            }
+          ]
+        },
+        "intent_gap": {
+          "script_slide_count": 6,
+          "slides": [
+            {
+              "slide": "1",
+              "overlay_text": "You are not **behind**. You are in **training**.",
+              "visual_scene": "Woman tying shoes in a modern gym before workout",
+              "planned_duration_s": "3s"
+            },
+            {
+              "slide": "2",
+              "overlay_text": "Tiny reps build **discipline**. Discipline builds **freedom**.",
+              "visual_scene": "Close-up of hands lifting dumbbells with focus",
+              "planned_duration_s": "3s"
+            },
+            {
+              "slide": "3",
+              "overlay_text": "When excuses get loud, your **standards** get louder.",
+              "visual_scene": "Athlete doing strong pushups under dramatic light",
+              "planned_duration_s": "3s"
+            },
+            {
+              "slide": "4",
+              "overlay_text": "No perfect day. Just one more **set**, one more **step**.",
+              "visual_scene": "Running treadmill with intense but controlled pace",
+              "planned_duration_s": "3s"
+            },
+            {
+              "slide": "5",
+              "overlay_text": "Your future body listens to what you do **today**.",
+              "visual_scene": "Mirror shot of confident posture after training",
+              "planned_duration_s": "3s"
+            },
+            {
+              "slide": "6",
+              "overlay_text": "Save this and start your **reset** tonight. **No zero days.**",
+              "visual_scene": "Woman walking out of gym confidently at sunset",
+              "planned_duration_s": "3s"
+            }
+          ],
+          "draft_video_material_count": 1,
+          "slide_cue_mapping": [
+            {
+              "cue": 1,
+              "slide": "1"
+            },
+            {
+              "cue": 2,
+              "slide": "1"
+            },
+            {
+              "cue": 3,
+              "slide": "2"
+            },
+            {
+              "cue": 4,
+              "slide": "2"
+            },
+            {
+              "cue": 5,
+              "slide": "3"
+            },
+            {
+              "cue": 6,
+              "slide": "4"
+            },
+            {
+              "cue": 7,
+              "slide": "4"
+            },
+            {
+              "cue": 8,
+              "slide": "5"
+            },
+            {
+              "cue": 9,
+              "slide": "6"
+            },
+            {
+              "cue": 10,
+              "slide": "6"
+            }
+          ],
+          "planned_total_duration_s": 18.0,
+          "actual_duration_s": 21.408844
+        },
+        "draft_facts": {
+          "canvas": [
+            1080,
+            1920
+          ],
+          "duration_s": 21.399,
+          "video_materials": [
+            {
+              "name": "base_image_1769195886.png",
+              "path_last2": "D:\\zhuomian\\手脚架\\手脚架\\Projects\\novel_promo_video_slim\\outputs\\Love_Hidden_in_Dreams\\images\\base_image_1769195886.png",
+              "type": "photo",
+              "w": 1440,
+              "h": 2560
+            }
+          ],
+          "audio_materials": [
+            {
+              "name": "9_justinbieberdaily_suono originale - justinbieberdaily.mp3"
+            },
+            {
+              "name": "9_justinbieberdaily_suono originale - justinbieberdaily.mp3"
+            }
+          ],
+          "text_materials": 10,
+          "transitions": 0,
+          "effects": 0,
+          "track_segments": {
+            "video": 1,
+            "audio": 2,
+            "text": 10
+          }
+        },
+        "scene_changes_detected": [],
+        "scene_change_note": "visual transitions detected at listed times; empty list means no cut above 0.2 threshold — consistent with a static-photo draft",
+        "audio_tech_facts": {
+          "mean_volume_db": -24.7,
+          "max_volume_db": -11.1,
+          "silence_segments_over_2s_at_-35dB": 0,
+          "note": "Technical signal facts only. Audio CONTENT (music genre, lyrics, sync feel) is UNKNOWN: this review cannot listen."
+        },
+        "storyboard": [
+          {
+            "cue": 1,
+            "midpoint_s": 0.6,
+            "file": "cue01_t0.60.jpg",
+            "sha256": "1a812aeff2752513e783293a3d795d6685146257dd528ddd40b439ddd295f5cd"
+          },
+          {
+            "cue": 2,
+            "midpoint_s": 2.049,
+            "file": "cue02_t2.05.jpg",
+            "sha256": "a8939d80e58b8310a25f97fb6ab571222eec8ce1fa06b844ef284c0568c3cee5"
+          },
+          {
+            "cue": 3,
+            "midpoint_s": 3.499,
+            "file": "cue03_t3.50.jpg",
+            "sha256": "2cef540fce184373b7b81ea5c84c8ef3fbf0c0852557ab145e85c1f04b6b8175"
+          },
+          {
+            "cue": 4,
+            "midpoint_s": 4.849,
+            "file": "cue04_t4.85.jpg",
+            "sha256": "0d70323b185669a0a2d29f36ffa9a641134ff3419b9c1e3905292252fbb97dd7"
+          },
+          {
+            "cue": 5,
+            "midpoint_s": 7.55,
+            "file": "cue05_t7.55.jpg",
+            "sha256": "ca4d3198d1311645ae3d4db96c41d57dbbc03eca32bad187ac1e438bcfe49101"
+          },
+          {
+            "cue": 6,
+            "midpoint_s": 10.0,
+            "file": "cue06_t10.00.jpg",
+            "sha256": "185a6c29ce7fc524e2db23f6c232917550e6f4a262624cb615b1d01d8fb102c1"
+          },
+          {
+            "cue": 7,
+            "midpoint_s": 11.8,
+            "file": "cue07_t11.80.jpg",
+            "sha256": "504243a038c9e1966d7c60d8d572e72b00926db7cc22d35387c544a4edcdbead"
+          },
+          {
+            "cue": 8,
+            "midpoint_s": 14.699,
+            "file": "cue08_t14.70.jpg",
+            "sha256": "236927bf5cf6baba36ca546ed5557c6cd4c232ffc9d43a075d4842940445ddfc"
+          },
+          {
+            "cue": 9,
+            "midpoint_s": 17.349,
+            "file": "cue09_t17.35.jpg",
+            "sha256": "ce73030f5fddce33ceffc5673a47019679cb4ca3c79e147cc22c1f4b98e1ce2b"
+          },
+          {
+            "cue": 10,
+            "midpoint_s": 19.899,
+            "file": "cue10_t19.90.jpg",
+            "sha256": "331a947663140b5244c65e674c0becbf0a5886a88c5873af42cbcdd7f8a25646"
+          }
+        ]
+      }
+    }
+  }
+}

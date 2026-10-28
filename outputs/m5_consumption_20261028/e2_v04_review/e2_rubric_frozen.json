@@ -1,0 +1,24 @@
+{
+  "schema": "m5.e2_rubric_frozen/v1",
+  "frozen_at": "2026-10-28T08:10:00+00:00",
+  "frozen_before_review_of": ["Love_Hidden_in_Dreams.mp4", "Fitness_Reset.mp4"],
+  "source_of_rubric_semantics": "Harbor #297 issuecomment-6456421623 (M5 v0.4) six-dimension research rubric description",
+  "canonical_package_status": "WAIT_MISSING_PACKAGE: m5_e2_professional_review_v0_1 (ZIP sha256 8f4a52a12854c0e7e63250f4bb43edef4cc47734d43b9ceac7edeb2d9d9fe425) was never transferred to this machine; this freeze follows the six dimensions AS DESCRIBED in #297 v0.4 and invents no numeric thresholds. If the canonical rubric JSON differs materially, affected verdicts must be re-validated.",
+  "dimensions": {
+    "d1_visual_story_relevance": "Do rendered visuals relate to the story/theme the script describes? Scored per scripted visual scene, not per image count. Single-image is not automatically a defect.",
+    "d2_narrative_completeness": "Does the text arc carry a complete hook-development-resolution story, and do visuals contribute anything to it?",
+    "d3_subtitle_readability": "Legibility (size/contrast/position), reading load (chars/sec, block size), typography correctness. Char speed is a flagged risk, never an automatic FAIL.",
+    "d4_pacing": "Cue duration variation, visual pacing variation, total length vs script plan and platform norms. Retention behavior UNKNOWN by construction here.",
+    "d5_audio_content": "Musical/narrative fit of the audio track. NOT SCORED in this session (cannot listen): stays UNKNOWN. Technical signal facts and source-identity metadata are recorded as facts, not quality scores.",
+    "d6_source_rights_expression_risk": "Origin and licensing exposure of image/audio assets, typography/expression risks. Rights facts are flagged; actual licensing status may stay UNKNOWN."
+  },
+  "verdict_vocabulary": "PASS / FAIL_CANDIDATE / PARTIAL / UNKNOWN per dimension; overall E2 NOT_PASS unless every dimension has grounded PASS and coverage claims hold",
+  "anti_gaming_rules": [
+    "Evaluator may not modify this rubric and then grade against the modified version",
+    "Single-image style is scored via d1 relevance, not image count (anti complexity-bias rule)",
+    "A hypothetical multi-image video with wrong-theme images must not score above a single coherent image (recorded as argument, not measured)",
+    "E1 technical PASS does not transfer to any E2 dimension",
+    "Audio content cannot be inferred from metadata or levels"
+  ],
+  "scope": "Research rubric for M5 v0.4 validation only; NOT the novel project's formal E2 publishing gate; grants no publishing authorization."
+}

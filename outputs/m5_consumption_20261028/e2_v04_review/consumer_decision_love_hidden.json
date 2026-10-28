@@ -1,0 +1,25 @@
+{
+  "schema": "m5.consumer_decision_record/v1",
+  "recorded_at": "2026-10-28T08:25:00+00:00",
+  "consumer_project_ref": "https://github.com/heiyoa/novel_promo_video_slim",
+  "consumer_actor": "heiyoa (repo owner; ZCode session 2026-10-28 M5 v0.4 consumption executed under owner's direct task mandate)",
+  "consumer_decision_ref": "repo:outputs/m5_consumption_20261028/e2_v04_review/consumer_decision_love_hidden.json",
+  "media_sha256": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc",
+  "provider_source_ref": "E2 evaluation methodology: Harbor #297 issuecomment-6456421623 six-dimension research rubric (canonical package m5_e2_professional_review_v0_1 pending transfer, ZIP sha 8f4a52a1...)",
+  "verdict": "REVISE",
+  "reason": "Full-cue visual E2 review (all 20 cue midpoints inspected; zero scene changes proven by ffmpeg detection over the entire 78.32s) grounds two FAIL_CANDIDATE dimensions: (d1) the rendered image matches 0/8 scripted scenes and is theme-incoherent with the rebirth-revenge drama in every frame; (d3) 130-138 character cues render as face-occluding multi-line blocks with apostrophe typography artifacts. Root cause is identified with source evidence: single-image pipeline architecture (script.md's Visual Scene column is not consumable by generate_base_image/create_video_from_srt) plus a fail-open fallback that silently reused another run's image. REVISE is scoped to the image-selection/fallback path, typography rendering, and the plan-vs-implementation reconciliation; it does NOT authorize re-editing, publishing, or any content production. The multi-scene-vs-single-image intent question is reserved for the Owner; audio content and platform fit remain UNKNOWN and are not part of this verdict.",
+  "before_frontier": "E2_UNASSESSED: round-2 limited pre-check (3 frames) flagged same-image and mismatch risks but no full-cue review existed; whether the visuals were professionally acceptable was UNKNOWN.",
+  "after_frontier": "E2_REVIEWED_NOT_PASS_REVISE_CANDIDATE: complete visual review with per-cue evidence on file; two FAIL_CANDIDATE dimensions with source-backed root causes; next legitimate actions are the Owner's intent ruling and (if confirmed) a scoped fix of image selection/fallback and typography — then a fresh export evaluated under the same frozen rubric. FORMAL_CONTROLLER_READBACK_PENDING.",
+  "selection_changed": true,
+  "technical_status": "PASS",
+  "professional_status": "REVIEWED_E2_NOT_PASS_TWO_FAIL_CANDIDATES_AUDIO_UNKNOWN",
+  "business_outcome": "NOT_MEASURED",
+  "market_value": "NOT_MEASURED",
+  "not_cross_project_reuse_pass": true,
+  "requires_controller_readback": true,
+  "evidence_refs": [
+    "outputs/m5_consumption_20261028/e2_v04_review/review_love_hidden.json",
+    "outputs/m5_consumption_20261028/e2_v04_review/intent_gap_classification.json",
+    "outputs/m5_consumption_20261028/e2_v04_review/rubric_contrast_attack.json"
+  ]
+}

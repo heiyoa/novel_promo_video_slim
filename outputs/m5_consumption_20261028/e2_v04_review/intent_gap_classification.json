@@ -1,0 +1,34 @@
+{
+  "schema": "m5.e2_intent_gap_classification/v1",
+  "recorded_at": "2026-10-28T08:20:00+00:00",
+  "question": "The scripts' Visual Scene columns (Love_Hidden: 8 slides/45s planned; Fitness: 6 slides/18s planned) vs drafts with exactly 1 static photo each — is the gap a professional design flaw, an implementation flaw, or an allowed creative style?",
+  "evidence_sources": [
+    "script.md x2 (git blobs 9ed0119f…, bb7b1ea3… via GitHub main; local normalized-identical)",
+    "draft.json x2 (video_materials=1 'photo' each; transitions=0; effects=0)",
+    "modules/jimeng_image_generator.py generate_base_image() — singular, one image per run",
+    "modules/video_composer.py create_video_from_srt(background_image_path) — single 底图轨道, one VideoSegment",
+    "fitness_asset_summary.json — 'jimeng_status': 'permission denied, fallback image used'; image points INTO Love_Hidden's folder",
+    "evidence_packet.json intent_gap + storyboard storyboards (0 scene changes both videos)"
+  ],
+  "classification": {
+    "design_level": {
+      "verdict": "DESIGN_GAP_CONFIRMED",
+      "finding": "The as-built pipeline structurally renders ONE image per run (generate_base_image singular; video_composer takes a single background_image_path). No code path consumes the per-slide Visual Scene or per-slide Duration columns. script.md — the artifact the pipeline itself generates and consumes for subtitles — promises 8/6 distinct scenes the implementation can never draw. Plan and implementation were never reconciled: either script.md's scene/duration columns are decorative (then the script format lies about the product) or the pipeline is missing a per-scene image loop (then it is an unimplemented requirement).",
+      "note": "Whether multi-scene was a binding consumer requirement or a template artifact is the OWNER's intent ruling — recorded PENDING, see consumer decision."
+    },
+    "implementation_level": {
+      "verdict": "IMPLEMENTATION_DEFECT_CONFIRMED",
+      "finding": "Fail-open degradation: on the 2026-02-09 run Jimeng generation failed ('permission denied') and the pipeline silently reused base_image_1769195886.png — an image produced Jan 24 inside the Love_Hidden run folder — while export returned 'status: ok'. The degradation was visible only in fitness_asset_summary.json, not in any consumer-facing status. Result: two different novel promos shipped with the identical unrelated image. Additional implementation defects: apostrophe typography artifacts in rendered text ('You' re', 'I' m' — space inserted after apostrophe, visible in rendered frames of Love_Hidden cues 3/4), and face-occluding multi-line blocks for 130-138 char cues.",
+      "secondary_observation": "For the Love_Hidden run itself (Jan 24), whether its own base image was Jimeng-generated with a mismatched prompt or also a fallback is UNKNOWN — no asset summary for that run exists in the repo."
+    },
+    "allowed_style": {
+      "verdict": "PARTIALLY_DEFENSIBLE_ONLY_WITH_OWNER_RULING_AND_THEMED_IMAGE",
+      "finding": "Single static image + text + music is a legitimate minimal 'swipe story' format, and the Fitness contrast shows it can carry theme-coherent content. But the CURRENT Love_Hidden render is not defensible as style: the pipeline TRIED to generate a themed image (it calls Jimeng every run), so a single themed image was the intent, and the shipped image matches zero of 8 story scenes. Whether single-image style is acceptable for future exports is the Owner's call."
+    }
+  },
+  "feedback_layer_routing": {
+    "TECH_DEFECT": "fallback reuse + typography artifacts → implementation fixes (image-gen failure must fail loudly or regenerate; apostrophe rendering)",
+    "PROFESSIONAL_GAP": "image-story relevance judgment → E2 rubric d1; multi-scene capability question → Owner intent ruling then product decision",
+    "BUSINESS_HYPOTHESIS": "whether 78s static-image promos can retain viewers at all → E4, NOT measured, not inferable"
+  }
+}

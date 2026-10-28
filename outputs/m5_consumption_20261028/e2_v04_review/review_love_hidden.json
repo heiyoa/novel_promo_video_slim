@@ -1,0 +1,80 @@
+{
+  "schema": "m5.e2_professional_review/v1",
+  "reviewed_at": "2026-10-28T08:15:00+00:00",
+  "reviewed_media": "Love_Hidden_in_Dreams.mp4",
+  "media_sha256": "9088b0e8ba92064bab50b895d3969c6a97a66cd142964c8aa7bfc23ef10aecdc",
+  "rubric_ref": "e2_rubric_frozen.json",
+  "evaluator_identity": {
+    "role": "Professional Evaluator (M5 v0.4 research scope)",
+    "actor": "ZCode session under repo owner's task mandate",
+    "independence_limitation": "Same engine family executed prior engineering rounds; not an independent human expert. The missing m5e2.review contract (which enforces evaluator separation) could not be used. Independence is therefore LIMITED and recorded, not claimed.",
+    "self_review_barrier": "Evaluator did not implement the reviewed export pipeline; the reviewed artifacts were produced 2026-01/02 by earlier runs."
+  },
+  "coverage_claim": {
+    "visual": "All 20 cue-midpoint frames extracted and visually inspected via contact sheet (storyboard_love_hidden/, love_hidden_contact_sheet.jpg) plus 5 full-resolution frames across sessions. ffmpeg scene detection (threshold 0.2) over the full 78.32s found 0 scene changes: the visual track is one static photo for the entire video. Coverage of visual content is therefore COMPLETE for this artifact class.",
+    "audio": "NOT REVIEWED BY LISTENING. Technical facts only (continuous signal, mean -28.1dB, max -14.3dB, no 2s+ silence at -35dB). Audio content = UNKNOWN.",
+    "full_continuous_playback": "NOT PERFORMED. For a zero-scene-change static video this does not reduce visual coverage; it does restrict motion/transition claims to the scene-detection evidence.",
+    "materials_read_in_full": "script.md (8 slides), subtitles.srt (20 cues), draft.json (1 photo + 20 texts + 3 audio refs), script.json (header-only parse artifact)."
+  },
+  "dimensions": {
+    "d1_visual_story_relevance": {
+      "verdict": "FAIL_CANDIDATE",
+      "evidence": [
+        {"t_s": "full 0-78.32", "observation": "Every sampled cue frame (cue1 t=2.10s ... cue20 t=75.65s) shows the same outdoor track-and-field high-jump photo (athlete inverted over hurdle bar)."},
+        {"t_s": "all", "observation": "script.md describes 8 distinct scenes: hospital gown crying (slide1), high-end restaurant confrontation (2), mean-girl closeup (3), funeral/crash montage (4), dark study with photo wall (5), determined stand before parents (6), black credit card closeup (7), whisper-into-ear with cold smile (8). None is a track-and-field scene; rendered image matches 0/8."},
+        {"t_s": "all", "observation": "Story content is a rebirth/marriage-revenge drama ('The Reborn Bride's Revenge'); the image content (sport competition) is unrelated to every story beat."}
+      ]
+    },
+    "d2_narrative_completeness": {
+      "verdict": "PARTIAL",
+      "evidence": [
+        {"t_s": "0.0-4.2 / 4.2-9.8", "observation": "Hook present: betrayal setup ('While I was dying in the delivery room, my husband was on a date.')."},
+        {"t_s": "9.8-33.5", "observation": "Development and stakes: rebirth, engagement humiliation, backstory ('The cold hospital, my dead baby, and my parents' fatal car crash.' cue9 t=29.9-33.5)."},
+        {"t_s": "38.8-68.2", "observation": "Turn and payoff: uncle Timothy secret, choice of Timothy, black card, 'I'm no longer a beggar.' (cue17 t=65.9-68.2)."},
+        {"t_s": "68.2-78.3", "observation": "Closing punchline: 'Keep him. I'm busy buying a dress to become your future Aunt.' (cues19-20). Text arc is complete."},
+        {"t_s": "all", "observation": "Visuals contribute ZERO narrative information (static unrelated photo): text carries 100% of the story."}
+      ]
+    },
+    "d3_subtitle_readability": {
+      "verdict": "FAIL_CANDIDATE",
+      "evidence": [
+        {"t_s": "cue3 9.8-18.2", "observation": "130 chars in 8.4s = 15.48 cps BUT renders as a ~9-line dense block covering most of the frame (full-res frame at t=11.748s): extreme reading load, covers the subject's face."},
+        {"t_s": "cue3 9.8-18.2", "observation": "Apostrophe typography artifacts: 'you' re stalking us?' (full-res t=11.748s shows space after apostrophe)."},
+        {"t_s": "cue4 18.2-20.7", "observation": "'You' re pathetic.' same artifact; 2.5s for 16 chars = 6.4 cps (easy) but inconsistent rhythm."},
+        {"t_s": "cue16 58.4-65.9", "observation": "Longest cue in video: 138 chars in 7.5s = 18.40 cps, renders as a ~6-line dense block covering the subject's face ('Xavier used to scream... his message read.'); long static hold with no visual change."},
+        {"t_s": "cue4 18.2-20.7", "observation": "'You' re pathetic.' apostrophe artifact; 2.5s for 16 chars = 6.40 cps (easy) but inconsistent rhythm."},
+        {"t_s": "cue3 9.8-18.2", "observation": "Second-longest: 130 chars in 8.4s = 15.48 cps as a ~9-line block (full-res frame at t=11.748s); apostrophe artifact 'you' re stalking us?'."},
+        {"t_s": "all", "observation": "White bold text over mid-tone sand/track background: contrast acceptable at 1080p but the light sand band reduces edge contrast for lower text lines."},
+        {"t_s": "stats", "observation": "Max 21.43 chars/sec at cue5 (20.7-22.8, 'His mistress Irene giggled, \"Give up, Serena.' 45 chars in 2.1s). Flagged per rubric: reading-load risk, not auto-FAIL by speed; FAIL_CANDIDATE is driven by block density + typography artifacts + face occlusion (cues 3 and 16)."}
+      ]
+    },
+    "d4_pacing": {
+      "verdict": "FAIL_CANDIDATE",
+      "evidence": [
+        {"t_s": "all", "observation": "Planned total 45s (8 slides x 5-7s); actual 78.32s = +74% over plan; per-slide planned durations are not consumed by the pipeline (SRT timing comes from reading-time estimation)."},
+        {"t_s": "all", "observation": "Zero visual pacing variation: no scene changes, no transitions, no motion (scene detection 0 events; draft transitions=0, effects=0)."},
+        {"t_s": "cue durations", "observation": "Cue durations range 1.5s-12.2s with no relation to story beats (12.2s static screen for cue16)."},
+        {"t_s": "-", "observation": "Whether 78s exceeds platform-optimal length for this format: UNKNOWN (no platform data in evidence)."}
+      ]
+    },
+    "d5_audio_content": {
+      "verdict": "UNKNOWN",
+      "evidence": [
+        {"t_s": "-", "observation": "Cannot listen. Technical facts: continuous audio, mean -28.1dB, max -14.3dB, no silence gaps >=2s at -35dB."},
+        {"t_s": "-", "observation": "Source identity from draft.json: 3 segments of the same TikTok-originated file '8_ріжочек.ua!!_оригінальний звук.mp3'. Musical fit to a revenge drama: UNKNOWN."}
+      ]
+    },
+    "d6_source_rights_expression_risk": {
+      "verdict": "FAIL_CANDIDATE",
+      "evidence": [
+        {"t_s": "-", "observation": "Audio file is a TikTok creator's 'original sound' rip (filename evidence); 3 copies tiled over 78s. Commercial re-use licensing status UNKNOWN -> material platform-rights risk flag."},
+        {"t_s": "-", "observation": "Base image origin UNKNOWN for this run (no asset summary in repo for the Jan 24 run). Image shows a real-looking minor-aged athlete; whether AI-generated or stock and its license: UNKNOWN -> risk flag."},
+        {"t_s": "-", "observation": "Whether the image resembles an identifiable real person: UNKNOWN (no face-recognition performed; none authorized)."}
+      ]
+    }
+  },
+  "overall_e2": "NOT_PASS",
+  "overall_note": "Two FAIL_CANDIDATE dimensions grounded in reviewed evidence (d1 image-story mismatch across every cue; d3 density/typography), one FAIL_CANDIDATE on pacing, one on rights flags; audio UNKNOWN. E2 PASS is not claimable. None of this constitutes a business or publishing judgment.",
+  "unknowns_remaining": ["audio content and musical fit", "image provenance/licensing", "platform length/retention fit", "viewer reception"],
+  "links": {"evidence_packet": "evidence_packet.json", "storyboard": "storyboard_love_hidden/", "contact_sheet": "love_hidden_contact_sheet.jpg"}
+}

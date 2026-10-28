@@ -1,0 +1,73 @@
+{
+  "schema": "m5.e2_professional_review/v1",
+  "reviewed_at": "2026-10-28T08:15:00+00:00",
+  "reviewed_media": "Fitness_Reset.mp4",
+  "media_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+  "rubric_ref": "e2_rubric_frozen.json",
+  "evaluator_identity": {
+    "role": "Professional Evaluator (M5 v0.4 research scope)",
+    "actor": "ZCode session under repo owner's task mandate",
+    "independence_limitation": "Same engine family executed prior engineering rounds; not an independent human expert. Independence LIMITED and recorded.",
+    "self_review_barrier": "Evaluator did not implement the reviewed export pipeline; the reviewed artifact was produced 2026-02-09 by an earlier run."
+  },
+  "coverage_claim": {
+    "visual": "All 10 cue-midpoint frames extracted and visually inspected via contact sheet (storyboard_fitness_reset/, fitness_reset_contact_sheet.jpg) plus 3 full-resolution frames across sessions. ffmpeg scene detection (threshold 0.2) over the full 21.41s found 0 scene changes: one static photo for the entire video. Visual coverage COMPLETE for this artifact class.",
+    "audio": "NOT REVIEWED BY LISTENING. Technical facts only (mean -24.7dB, max -11.1dB, no 2s+ silence at -35dB). Audio content = UNKNOWN.",
+    "full_continuous_playback": "NOT PERFORMED; same reasoning as Love_Hidden review.",
+    "materials_read_in_full": "script.md (6 slides), subtitles.srt (10 cues), draft.json, fitness_asset_summary.json (records jimeng failure + image fallback + music source)."
+  },
+  "dimensions": {
+    "d1_visual_story_relevance": {
+      "verdict": "PARTIAL",
+      "evidence": [
+        {"t_s": "full 0-21.41", "observation": "Every sampled cue frame (cue1 t=0.60s ... cue10 t=19.90s) shows the same outdoor track high-jump photo — the file base_image_1769195886.png from the Love_Hidden run (fitness_asset_summary.json: 'jimeng_status': 'permission denied, fallback image used')."},
+        {"t_s": "all", "observation": "script.md describes 6 gym-specific scenes: tying shoes in a modern gym (1), dumbbell closeup (2), pushups under dramatic light (3), treadmill run (4), mirror posture shot (5), sunset walk out of gym (6). Rendered image matches 0/6 described scenes."},
+        {"t_s": "all", "observation": "HOWEVER the text is generic sport-discipline motivation ('Tiny reps build discipline.'), and a track-and-field athlete is theme-adjacent to fitness: image-text THEME coherence is broadly maintained even though scene fidelity is 0/6. This contrasts with Love_Hidden where both scene fidelity AND theme coherence fail."}
+      ]
+    },
+    "d2_narrative_completeness": {
+      "verdict": "PARTIAL",
+      "evidence": [
+        {"t_s": "0.0-2.1", "observation": "Hook: 'You are not behind. You are in training.'"},
+        {"t_s": "2.1-9.5", "observation": "Development: discipline/freedom/standards progression."},
+        {"t_s": "9.5-18.4", "observation": "Turn: 'No perfect day. Just one more set, one more step.'"},
+        {"t_s": "18.4-21.4", "observation": "CTA close: 'Save this and start your reset tonight. No zero days.' Complete mini-arc; visuals again contribute nothing."}
+      ]
+    },
+    "d3_subtitle_readability": {
+      "verdict": "PASS_CANDIDATE_WITH_FLAGS",
+      "evidence": [
+        {"t_s": "cue3 2.9-4.1", "observation": "Max load 27 chars / 1.2s = 22.50 cps (flagged fast per rubric); overall blocks stay 1-3 lines, face not occluded."},
+        {"t_s": "all", "observation": "Text centered mid-frame over blurred background band; white bold, consistent; no apostrophe artifacts observed in rendered frames ('You are not behind.' etc. render clean)."},
+        {"t_s": "stats", "observation": "10 cues, 1.5-4.2s each, reading rhythm consistent. Flags: max 22.5 cps; lower text over light sand band."}
+      ]
+    },
+    "d4_pacing": {
+      "verdict": "PASS_CANDIDATE_WITH_FLAGS",
+      "evidence": [
+        {"t_s": "all", "observation": "Planned 18s (6x3s), actual 21.41s (+19%): closer to plan than Love_Hidden (+74%)."},
+        {"t_s": "all", "observation": "Still zero visual pacing variation (static photo, no transitions); rhythm carried entirely by text."},
+        {"t_s": "-", "observation": "21.4s length is within common platform short-form norms; retention fit UNKNOWN."}
+      ]
+    },
+    "d5_audio_content": {
+      "verdict": "UNKNOWN",
+      "evidence": [
+        {"t_s": "-", "observation": "Cannot listen. Technical: continuous, mean -24.7dB, max -11.1dB."},
+        {"t_s": "-", "observation": "Source identity: '9_justinbieberdaily_suono originale - justinbieberdaily.mp3' x2 (fitness_asset_summary.json). Musical fit to motivational content: UNKNOWN."}
+      ]
+    },
+    "d6_source_rights_expression_risk": {
+      "verdict": "FAIL_CANDIDATE",
+      "evidence": [
+        {"t_s": "-", "observation": "Audio: TikTok creator sound rip ('justinbieberdaily'), 2 copies. Licensing UNKNOWN -> rights risk flag."},
+        {"t_s": "-", "observation": "Image: provably a FALLBACK reuse of another project run's image after Jimeng 'permission denied' (fitness_asset_summary.json) — the run knew generation failed and exported anyway with 'status: ok'."},
+        {"t_s": "-", "observation": "Same real-looking athlete likeness concerns as Love_Hidden: provenance UNKNOWN."}
+      ]
+    }
+  },
+  "overall_e2": "NOT_PASS",
+  "overall_note": "Better than Love_Hidden on d1 (theme-adjacent) and d3/d4 (readable, near-plan pacing), but d6 rights flags and the documented fail-open fallback, plus audio UNKNOWN, keep E2 at NOT_PASS. E1 PASS (round 2) does not transfer.",
+  "unknowns_remaining": ["audio content and musical fit", "image provenance/licensing", "retention fit"],
+  "links": {"evidence_packet": "evidence_packet.json", "storyboard": "storyboard_fitness_reset/", "contact_sheet": "fitness_reset_contact_sheet.jpg", "asset_summary": "../../Fitness_Reset_20260209_003506/fitness_asset_summary.json"}
+}

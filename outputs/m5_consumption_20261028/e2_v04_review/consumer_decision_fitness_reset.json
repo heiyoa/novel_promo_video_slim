@@ -1,0 +1,25 @@
+{
+  "schema": "m5.consumer_decision_record/v1",
+  "recorded_at": "2026-10-28T08:25:00+00:00",
+  "consumer_project_ref": "https://github.com/heiyoa/novel_promo_video_slim",
+  "consumer_actor": "heiyoa (repo owner; ZCode session 2026-10-28 M5 v0.4 consumption executed under owner's direct task mandate)",
+  "consumer_decision_ref": "repo:outputs/m5_consumption_20261028/e2_v04_review/consumer_decision_fitness_reset.json",
+  "media_sha256": "fd5a2466f292529fe08e85932a9b07208cc44d9dd815e43206dc5d57d04737f0",
+  "provider_source_ref": "E2 evaluation methodology: Harbor #297 issuecomment-6456421623 six-dimension research rubric (canonical package m5_e2_professional_review_v0_1 pending transfer, ZIP sha 8f4a52a1...)",
+  "verdict": "REVISE",
+  "reason": "Full-cue visual E2 review (all 10 cue midpoints inspected; zero scene changes proven over the entire 21.41s). The video is the better of the two: theme-adjacent image (sport photo for sport motivation), clean typography, pacing within 19% of plan. But it still ships a fallback image that matches 0/6 scripted gym scenes after a documented Jimeng 'permission denied' (fitness_asset_summary.json), carries TikTok-ripped audio (rights flag), and its E2 overall stays NOT_PASS with audio content UNKNOWN. REVISE is scoped to the same failure path as Love_Hidden (image generation must not fail open to an unrelated asset) plus the rights-sourcing question; it does NOT authorize re-editing, publishing, or content production.",
+  "before_frontier": "E2_UNASSESSED: single image known from round-2 pre-check; theme-coherence and scene-fidelity split not quantified.",
+  "after_frontier": "E2_REVIEWED_NOT_PASS_BETTER_OF_TWO: usable as the rubric's positive-contrast case (coherent single image) while remaining a REVISE candidate for the fallback path and rights sourcing. FORMAL_CONTROLLER_READBACK_PENDING.",
+  "selection_changed": true,
+  "technical_status": "PASS",
+  "professional_status": "REVIEWED_E2_NOT_PASS_PARTIAL_D1_RIGHTS_FLAGS_AUDIO_UNKNOWN",
+  "business_outcome": "NOT_MEASURED",
+  "market_value": "NOT_MEASURED",
+  "not_cross_project_reuse_pass": true,
+  "requires_controller_readback": true,
+  "evidence_refs": [
+    "outputs/m5_consumption_20261028/e2_v04_review/review_fitness_reset.json",
+    "outputs/m5_consumption_20261028/e2_v04_review/rubric_contrast_attack.json",
+    "../../Fitness_Reset_20260209_003506/fitness_asset_summary.json"
+  ]
+}

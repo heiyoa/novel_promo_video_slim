@@ -1,0 +1,29 @@
+{
+  "schema": "m5.e2_rubric_contrast_attack/v1",
+  "recorded_at": "2026-10-28T08:20:00+00:00",
+  "purpose": "Attack the frozen E2 rubric for misjudgment using the fitness single-image video as contrast, plus one unmeasurable counter-example.",
+  "attack_1_complexity_bias": {
+    "threat": "A rubric that equates 'more shots = better editing' would fail both real videos for being single-image, and would reward a hypothetical 8-image video regardless of whether its images fit the story.",
+    "result": "NEUTRALIZED. d1 is scored as image-story RELEVANCE, not shot count: Fitness (0/6 scripted scenes, but theme-adjacent image) scores PARTIAL; Love_Hidden (0/8 scripted scenes AND theme-incoherent image) scores FAIL_CANDIDATE. The discriminator is coherence, not complexity.",
+    "measured_on": "review_fitness_reset.json d1 vs review_love_hidden.json d1 (same rubric, same static-image format, different outcomes)"
+  },
+  "attack_2_scene_count_as_proxy": {
+    "threat": "A rule that scores 'scripted scenes implemented: 0/8 → auto FAIL' would have failed BOTH videos identically and would have learned nothing the image itself doesn't show.",
+    "result": "PARTIALLY ACCEPTED. Scene fidelity IS recorded as factual evidence (0/8, 0/6) but the verdict-driving dimension is d1 relevance. Scene-count alone cannot distinguish Fitness from Love_Hidden; relevance does. However, if the Owner rules multi-scene a hard requirement, scene-count becomes binding at the E3/consumer layer — the rubric deliberately keeps that ruling out of E2.",
+    "measured_on": "intent_gap_classification.json + both d1 records"
+  },
+  "attack_3_multi_image_wrong_story_hypothetical": {
+    "threat": "'8 images, all wrong-theme' counter-example: a rule rewarding image count would score it above both real videos.",
+    "result": "RECORDED AS ARGUMENT ONLY — NOT MEASURED. Producing such a video would require generating new content, which this trial must not do (no auto re-edit / no new content production). The rubric's d1 wording ('relate to the story the script describes') already excludes it by construction; any future rubric revision must keep a negative control of this class before claiming improvement."
+  },
+  "attack_4_e1_to_e2_transfer": {
+    "threat": "Both videos hold E1 technical PASS from round 2 (exact-SHA receipts); a rule letting E1 PASS leak into E2 would auto-PASS both.",
+    "result": "NEUTRALIZED. Rubric anti-gaming rule 4 forbids the transfer; both reviews keep overall_e2 = NOT_PASS despite E1 PASS. This is the round-1 lesson ('exporter status:ok ≠ media verified') extended one layer up."
+  },
+  "attack_5_char_speed_auto_fail": {
+    "threat": "A rule that auto-fails any cue above ~20 chars/sec would fail Fitness (cue3: 22.50 cps) on its best-executed short cue and would have failed nothing about Love_Hidden's actual worst problem (130-138 char blocks).",
+    "result": "NEUTRALIZED. Char speed is a flagged risk (rubric d3), never an automatic FAIL; verdicts are driven by block density, occlusion and typography, which the speed metric cannot see.",
+    "measured_on": "SRT stats: Fitness max 22.50 cps (cue3, clean 1-line render) vs Love_Hidden max 21.43 cps (cue5) — the higher-speed cue renders BETTER than several slower cues"
+  },
+  "conclusion": "The frozen six-dimension rubric survived all measurable attacks without amendment; no rubric revision is proposed this round. The one weakness exposed: the rubric cannot judge what it has no evidence for (audio content d5 stays UNKNOWN, not guessed)."
+}
